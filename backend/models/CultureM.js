@@ -25,4 +25,4 @@ const cultureMSchema = new mongoose.Schema({
 
 cultureMSchema.plugin(uniqueValidatior)
 
-module.exports = mongoose.model('cultureM', cultureMSchema)
+module.exports = mongoose.model('CultureM', cultureMSchema)

@@ -24,4 +24,4 @@ const cultureFSchema = new mongoose.Schema({
 
 cultureFSchema.plugin(uniqueValidatior)
 
-module.exports = mongoose.model('cultureF', cultureFSchema)
+module.exports = mongoose.model('CultureF', cultureFSchema)
