@@ -13,7 +13,7 @@ const cultureMData = require('./data/cultureMData')
 mongoose.connect(
   dbURI,
   { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true },
-  (err, db) => {
+  (err) => {
     if (err) return console.log(err)
     User.create([{
       username: 'Sonia',
