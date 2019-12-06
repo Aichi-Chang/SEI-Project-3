@@ -9,7 +9,7 @@ function errorHandler(err, req, res, next) {
     }
     return res.status(422).json({ message: 'Unprocessable Entry', errors })
   }
-  res.sendStatuts(500)
+  res.status(500)
   next(err)
 }
 
