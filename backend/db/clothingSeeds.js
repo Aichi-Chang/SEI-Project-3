@@ -21,7 +21,7 @@ mongoose.connect(
         }])
       })  
       .then(users => {
-        console.log(`${users.length} User Created!`)
+        console.log(`${users.length} Clothing User Created`)
         return Clothing.create(clothingData(users))
       })
       .then(clothing => console.log(`${clothing.length} Item Created`))     

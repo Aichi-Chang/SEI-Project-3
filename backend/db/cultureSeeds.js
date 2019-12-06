@@ -22,7 +22,7 @@ mongoose.connect(
       passwordConfirmation: '12345'
     }])
       .then(users => {
-        console.log(`${users.length} User Created!`)
+        console.log(`${users.length} Culture User Created`)
         return CultureB.create(cultureBData(users))
       })
       .then(cultureB => console.log(`${cultureB.length} Book Articles Created`)) 
