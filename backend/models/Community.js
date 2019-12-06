@@ -3,11 +3,12 @@ const uniqueValidatior = require('mongoose-unique-validator')
 
 const communitySchema = new mongoose.Schema({
   title: { type: String },
+  subTitle: { type: String },
   image: { type: String },
   text: { type: String },
   lng: { type: Number },
   lat: { type: Number },
-  rating: { type: Number, min: 1, max: 5 }
+  address: { type: String }
 }, {
   timestamps: true
 })
