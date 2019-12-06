@@ -11,7 +11,7 @@ const App = () => {
   return <section className="hero has-text-centered is-large">
     <div className="hero-body">
       <div className="container">
-        <img src="" alt="Logo" />
+        <img src="frontend/src/images/currentImg/Logo/Vault-Logo-Solid-Black.png" alt="Logo" />
         <h1 className="title">The Vault</h1>
         <h2 className="subtitle">Unlock your lifestyle...</h2>
       </div>
