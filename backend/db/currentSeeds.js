@@ -14,7 +14,7 @@ mongoose.connect(
     // .then(() => User.create(userData))
     // .then(users => console.log(`${users.length} User Created!`))      
     Current.create(currentData)
-      .then(current => console.log(`${current.length} Article Created!`))
+      .then(current => console.log(`${current.length} Current Article Created`))
       .catch(err => console.log(err))
       .finally(() => mongoose.connection.close())
   }
