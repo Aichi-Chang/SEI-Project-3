@@ -82,19 +82,19 @@ router.route('/culture-films/:id/comments/:commentId')
 
 
 // ************************ cultureM ************************
-router.route('/culture-music')
+router.route('/culture-musics')
   .get(cultureMFunc.index)
 
 
-router.route('/culture-music/:id')
+router.route('/culture-musics/:id')
   .get(cultureMFunc.show)
 
 
-router.route('/culture-music/:id/comments')
+router.route('/culture-musics/:id/comments')
   .post(secureRoute, cultureMFunc.createComment)
 
 
-router.route('/culture-music/:id/comments/:commentId')
+router.route('/culture-musics/:id/comments/:commentId')
   .delete(secureRoute, cultureMFunc.removeComment)
 
 

@@ -10,7 +10,11 @@ const clothingSchema = new mongoose.Schema({
   title: { type: String, required: true },
   image: { type: String, required: true },
   text: { type: String },
-  era: { type: Number, required: true },
+  decade: { type: Number, required: true },
+  size: { type: Number, require: true },
+  brand: { type: String, require: true },
+  department: { type: String, require: true },
+  product: { type: String, require: true },
   user: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
   comments: [ commentSchema ]
 }, {
@@ -21,3 +25,4 @@ const clothingSchema = new mongoose.Schema({
 clothingSchema.plugin(uniqueValidatior)
 
 module.exports = mongoose.model('Clothing', clothingSchema)
+
