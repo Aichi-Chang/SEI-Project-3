@@ -43,6 +43,12 @@ router.route('/communities/:id')
   .get(communityFunc.show)
 
 
+router.route('/communities/:id/ratings')
+  .post(secureRoute, communityFunc.createRating)
+
+
+router.route('/communities/:id/ratings/:raId')
+  .delete(secureRoute, communityFunc.removeRating)
 
   
 // ************************ cultureB ************************

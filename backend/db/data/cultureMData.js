@@ -8,7 +8,7 @@ const cultureMData = (user) => {
     artist: 'xxxx',
     rating: 1,
     user: user[0],
-    comment: []
+    comments: []
   } 
   ]
 }

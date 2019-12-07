@@ -72,7 +72,7 @@ function createComment(req, res) {
     .findById(req.params.id)
     .populate('comment.user')
     .then(clothing => {
-      if (!clothing) return res.stauts(404).json({ message: 'Item Not Found' })
+      if (!clothing) return res.status(404).json({ message: 'Item Not Found' })
       
       clothing.comments.push(req.body)
       
@@ -89,7 +89,7 @@ function removeComment(req, res) {
   Clothing
     .findById(req.params.id)
     .then(clothing => {
-      if (!clothing) return res.stauts(404).json({ message: 'Item Not Found' })
+      if (!clothing) return res.status(404).json({ message: 'Item Not Found' })
       
       const commentById = clothing.comments.id(req.params.commentId)
       commentById.remove()

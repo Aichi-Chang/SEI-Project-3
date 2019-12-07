@@ -7,7 +7,7 @@ const cultureFData = (user) => {
     image: 'xxx',
     rating: 1,
     user: user[0],
-    comment: []
+    comments: []
   } 
   ]
 }
