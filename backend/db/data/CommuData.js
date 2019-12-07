@@ -61,5 +61,59 @@ module.exports = [
     lng: -0.068213,
     lat: 51.469906,
     address: 'Frank\'s Café, Bold Tendencies, 7th-10th Floor Multi Storey Car Park, 95A Rye Lane, London SE15 4ST'
-  }     
+  },
+  {
+    title: 'SHOP: TOKYO BIKE',
+    subTitle: '',
+    image: 'frontend/src/images/commuImg/tokyo-bike.jpg',
+    text: 'This shop is a shrine to design and two-wheeled transport. From the perfectly positioned bikes and accessories to the considered lighting, tokyobike exudes design and that’s just the shop. Originally founded in the quiet Tokyo suburb of Yanaka, the bikes themselves are designed to be light and comfortable underpinned with the brand’s philosophy that “a bike is simply a way to enjoy your city, it’s as much about the journey as the destination”. We’re sure most people who have cycled around Old Street roundabout might have a thing to say about that.',
+    lng: -0.0841537,
+    lat: 51.5259203,
+    address: '87-89 Tabernacle Street Shoreditch London EC2A 4BA'
+  },
+  {
+    title: 'RESTAURANT: YAMA MOMO',
+    subTitle: '',
+    image: 'frontend/src/images/commuImg/yama-momo.jpg',
+    text: 'This modern Japanese new style Izakaya/sushi restaurant and cocktail bar brings an edge to East Dulwich\'s repertoire of homely gastro pubs and wine bars. Both the food and restaurant interior are really nicely presented. Worth visiting for a special night out.',
+    lng: -0.0752634,
+    lat: 51.4582584,
+    address: '72 Lordship Ln, East Dulwich, London SE22 8HF'
+  },
+  {
+    title: 'SHOP: BYO: PLASTIC-FREE SHOP',
+    subTitle: '',
+    image: 'frontend/src/images/commuImg/byo.jpeg',
+    text: 'BYO - Bring Your Own, is a gorgeous plastic-free shop. Conscious residents of South East London will now be able to shop plastic-free by bringing their own reusable containers to BYO and filling it with the amount you need of each item - helping customers to reduce their environmental footprint and at the same time cut down on food waste. Shoppers can choose from a variety of quality organic grains, pulses, nuts, dried fruits, pickles, spices and vegan chocolate buttons! You can also choose oils like Argan, sesame and chilli olive oil as well as household goods, including cleaning products and body care essentials all without the plastic wrapping. BYO also sell a selection of reusable items like eco coffee cups and water bottles. ',
+    lng: -0.056797,
+    lat: 51.466056,
+    address: '147 Evelina Rd, London SE15 3HB'
+  },
+  {
+    title: 'SHOP: FOREST',
+    subTitle: '',
+    image: 'frontend/src/images/commuImg/forest-london.jpg',
+    text: 'A collection of Scandinavian and Northern European mid-century modern furniture, with the use of innovative pattern by a series of talented illustrators and designers. You will fall in love more than once in this shop - the colour palette, the attention to detail and the beautiful furniture will definitely leave you day-dreaming for the rest of the day!',
+    lng: -0.1117120,
+    lat: 51.5217475,
+    address: '115 Clerkenwell Rd, EC1R 5BY'
+  },
+  {
+    title: 'RESTAURANT: SUNDAY',
+    subTitle: '',
+    image: 'frontend/src/images/commuImg/sunday.jpg',
+    text: 'Sunday is the sort of place that every neighbourhood needs, or wants. Atop spot for a weekend brunch, with imaginative & ever changing dishes. Also perfect for an affordable and interesting dinner. The menu changes daily & on a sunny day you can sit out front. Excellent coffee too.',
+    lng: -0.1135948,
+    lat: 51.5426679,
+    address: '169 Hemingford RdLondon N1 1DA'
+  },
+  {
+    title: 'SHOP: CORNERCOPIA',
+    subTitle: '',
+    image: 'frontend/src/images/commuImg/conercopia.jpg',
+    text: 'Cornercopia is a unique little shop selling exquisite hand made kitchen and home wares, ranging from mugs to soaps,and blankets to hand carved spoons (and a delightful, but rather fat, cat). They also run the adjacent Blue Jay, a restaurant serving delicious food, with an ethos for ultra-local produce and sustainability.',
+    lng: -0.1135442,
+    lat: 51.4621978,
+    address: 'Brixton Village, Unit 37-38 Coldharbour Ln, Brixton, London SW9 8PR'
+  }        
 ]
