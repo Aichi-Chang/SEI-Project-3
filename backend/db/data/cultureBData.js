@@ -268,7 +268,6 @@ const cultureBData = (user) => {
        user: user[0],
        comment: []
      }
-   
   ]
 }
 

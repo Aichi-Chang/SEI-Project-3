@@ -15,6 +15,7 @@ const cultureBSchema = new mongoose.Schema({
   year: { type: Number },
   review: { type: String },
   image: { type: String },
+  category: { type: String },
   rating: { type: Number, min: 1, max: 5 },
   user: { type: mongoose.Schema.ObjectId, ref: 'User', require: true },
   comments: [ commentSchema ]

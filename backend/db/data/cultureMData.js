@@ -320,7 +320,7 @@ const cultureMData = (user) => {
       rating: 5,
       comment: [],
       user: users[0]
-    },
+    }
   ]
 }
 

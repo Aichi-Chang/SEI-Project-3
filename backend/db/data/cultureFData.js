@@ -269,7 +269,7 @@ comment: []
   title: 'The Princess Bride',
   year: 1987,
   image: 'https://m.media-amazon.com/images/M/MV5BMGM4M2Q5N2MtNThkZS00NTc1LTk1NTItNWEyZjJjNDRmNDk5XkEyXkFqcGdeQXVyMjA0MDQ0Mjc@._V1_SY1000_CR0,0,676,1000_AL_.jpg',
-  summary: '\"As you wish..." \"Inconceivable!\" \"My name is Inigo Montoya...\" This film is everything. From its opening scenes of the young boy being read a story by his kindly Grandfather to the romance, action, adventure and fun of the fairy tale. The Princess bride tells the tale of the beautiful Buttercup (Robin Wright) and her true love, Westley (Elwes) who become separated through the course of an unfortunate event involving some pirates. Westley\'s destiny is to rescue Buttercup from the clutches of an evil Prince so that they might be together again. Yet he\'s not bargained on some of the wonderful characters that he will meet (and befriend) along the way... This film is so deliciously acted, made and written that it is a treat to watch.I\'ve lost count of how many times I\'ve seen it now. But every time I still gain the same enormous amount of pleasure from watching it. A movie that is a delight for the young and just as much fun for everyone else. The actors are all superb in their roles (\'perfect casting\' does not come close to describing it!) A young Cary Elwes is suitably dashing as our cocky hero (check out the sword fighting!)and Robin Wright is good as the beautiful Buttercup. Mandy Patinkin is great as the vengeful Inigo Montoya who utters that famous "you killed my father. prepare to die" line. Everyone else gives there all, including Christoper Guest, Chris Sarandon (as the main villian), Wallace Shawn, the late Andre The Giant,Mel Smith, and Billy Crystal. Despite the film being over 30 years old, it\'s widely reference in pop culture, due to the humour and sly jokes that are carefully sprinkled in the movie, making them as sharp today as they were back in 1987.'
+  summary: '\"As you wish..." \"Inconceivable!\" \"My name is Inigo Montoya...\" This film is everything. From its opening scenes of the young boy being read a story by his kindly Grandfather to the romance, action, adventure and fun of the fairy tale. The Princess bride tells the tale of the beautiful Buttercup (Robin Wright) and her true love, Westley (Elwes) who become separated through the course of an unfortunate event involving some pirates. Westley\'s destiny is to rescue Buttercup from the clutches of an evil Prince so that they might be together again. Yet he\'s not bargained on some of the wonderful characters that he will meet (and befriend) along the way... This film is so deliciously acted, made and written that it is a treat to watch.I\'ve lost count of how many times I\'ve seen it now. But every time I still gain the same enormous amount of pleasure from watching it. A movie that is a delight for the young and just as much fun for everyone else. The actors are all superb in their roles (\'perfect casting\' does not come close to describing it!) A young Cary Elwes is suitably dashing as our cocky hero (check out the sword fighting!)and Robin Wright is good as the beautiful Buttercup. Mandy Patinkin is great as the vengeful Inigo Montoya who utters that famous "you killed my father. prepare to die" line. Everyone else gives there all, including Christoper Guest, Chris Sarandon (as the main villian), Wallace Shawn, the late Andre The Giant,Mel Smith, and Billy Crystal. Despite the film being over 30 years old, it\'s widely reference in pop culture, due to the humour and sly jokes that are carefully sprinkled in the movie, making them as sharp today as they were back in 1987.',
   rating: 5,
   user: user[0],
   comment: [] 
@@ -292,11 +292,7 @@ comment: []
   rating: 5,
   user: user[0],
   comment: [] 
-
-},
 }
-  }
-
   ]
 }
 
