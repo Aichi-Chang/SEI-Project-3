@@ -6,6 +6,7 @@ const commentSchema = new mongoose.Schema({
   user: { type: mongoose.Schema.ObjectId, ref: 'User', required: true }
 })
 
+
 const clothingSchema = new mongoose.Schema({
   title: { type: String, required: true },
   image: { type: String, required: true },

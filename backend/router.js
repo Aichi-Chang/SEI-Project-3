@@ -42,11 +42,11 @@ router.route('/communities')
 
 router.route('/communities/:id')
   .get(communityFunc.show)
-  .post(secureRoute, communityFunc.createLikes)
+  // .post(secureRoute, communityFunc.createLikes)
 
 
-router.route('/communities/:id/:likeId')  
-  .delete(secureRoute, communityFunc.removeLikes)
+// router.route('/communities/:id/:likeId')  
+//   .delete(secureRoute, communityFunc.removeLikes)
 
 
 router.route('/communities/:id/ratings')
@@ -137,7 +137,7 @@ router.route('/login')
 // ************************ dashboard ************************
 
 router.route('/dashboard/:userId')
-  .get(secureRoute, likeFunc.likeIndex)
+  .get(secureRoute, userFunc.retrieveLikes)
 
 
 

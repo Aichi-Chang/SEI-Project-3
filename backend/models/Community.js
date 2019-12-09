@@ -7,10 +7,10 @@ const ratingSchema = new mongoose.Schema({
   user: { type: mongoose.Schema.ObjectId, ref: 'User', required: true }
 })
 
-const likeSchema = new mongoose.Schema({
-  like: { type: Boolean, required: true },
-  user: { type: mongoose.Schema.ObjectId, ref: 'User', required: true }
-})
+// const likeSchema = new mongoose.Schema({
+//   like: { type: Boolean, required: true },
+//   user: { type: mongoose.Schema.ObjectId, ref: 'User', required: true }
+// })
 
 const communitySchema = new mongoose.Schema({
   title: { type: String },
@@ -21,8 +21,8 @@ const communitySchema = new mongoose.Schema({
   address: { type: String },
   website: { type: String },
   user: { type: mongoose.Schema.ObjectId, ref: 'User' },
-  ratings: [ ratingSchema ],
-  likes: [ likeSchema ]
+  ratings: [ ratingSchema ]
+  // likes: [ likeSchema ]
 }, {
   timestamps: true
 })

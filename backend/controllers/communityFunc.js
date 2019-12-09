@@ -22,41 +22,43 @@ function show(req, res) {
     .catch(err => console.log(err))
 }
 
-//POST user likes articles
-function createLikes(req, res) {
-  req.body.user = req.currentUser
-  Community
-    .findById(req.params.id)
-    .populate('like.user')
-    .then(community => {
-      if (!community) res.status(404).json({ message: ' Article Not Found' })
-
-      community.likes.push(req.body)
-
-      res.status(200).json(community)
-      return community.save()
-    })
-    .catch(err => console.log(err))
-}
 
 
+// //POST user likes articles
+// function createLikes(req, res) {
+//   req.body.user = req.currentUser
+//   Community
+//     .findById(req.params.id)
+//     .populate('like.user')
+//     .then(community => {
+//       if (!community) res.status(404).json({ message: ' Article Not Found' })
 
-//DELETE user likes articles
-function removeLikes(req, res) {
-  req.body.user = req.currentUser
-  Community
-    .findById(req.params.id)
-    .then(community => {
-      if (!community) return res.status(404).json({ message: 'Article Not Found' })
+//       community.likes.push(req.body)
+
+//       res.status(200).json(community)
+//       return community.save()
+//     })
+//     .catch(err => console.log(err))
+// }
+
+
+
+// //DELETE user likes articles
+// function removeLikes(req, res) {
+//   req.body.user = req.currentUser
+//   Community
+//     .findById(req.params.id)
+//     .then(community => {
+//       if (!community) return res.status(404).json({ message: 'Article Not Found' })
       
-      const likeById = community.likes.id(req.params.likeId)
-      likeById.remove()
+//       const likeById = community.likes.id(req.params.likeId)
+//       likeById.remove()
 
-      res.status(410).json(community)
-      return community.save()
-    })
-    .catch(err => console.log(err))
-}
+//       res.status(410).json(community)
+//       return community.save()
+//     })
+//     .catch(err => console.log(err))
+// }
 
 
 
@@ -104,7 +106,7 @@ module.exports = {
   index,
   show,
   createRating,
-  removeRating,
-  createLikes,
-  removeLikes
+  removeRating
+  // createLikes,
+  // removeLikes
 }

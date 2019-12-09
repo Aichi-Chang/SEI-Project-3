@@ -22,19 +22,29 @@ function login(req, res) {
         return res.status(401).json({ message: 'Unauthorized' }) // send a response of unauthorized and end the process here
       }
       const token = jwt.sign({ sub: user._id }, secret, { expiresIn: '12h' }) // if all good, create a JSON web token (jwt), baking in the user id, a secret to encode/decode and an expiry time for the token
-      res.status(202).json({ message: `Welcome Back ${user.username}`, token })
+      res.status(202).json({ message: `Welcome Back ${user.username}`, token, user })
     }) //finally send back a message with that created token
     .catch(() => res.status(401).json({ message: 'Unauthorized' } ))
 }
 
-
-
+// find user liked articles
+function retrieveLikes(req, res) {
+  req.body.user = req.currentUser
+  User
+    .findOne({ _id: req.params.userId })
+    .then(user => {
+      if (!user) res.status(404).json({ message: 'User Not Found' })
+      return res.status(200).json(user)
+    })
+    .catch(err => console.log(err))
+}
 
 
 
 
 module.exports = {
   register,
-  login
+  login,
+  retrieveLikes
 }
 // exporting each 'route handling' function, taking advantage of es6 object short hand, same as saying { login: login }
