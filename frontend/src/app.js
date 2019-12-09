@@ -12,8 +12,8 @@ import 'bulma'
 
 const App = () => (
   <BrowserRouter>
-    <SideNav />
-    <Main />
+    {/* <SideNav /> */}
+    {/* <Main /> */}
   </BrowserRouter>
 )
 

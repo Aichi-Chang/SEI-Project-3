@@ -24,26 +24,23 @@ function show(req, res) {
 
 
 
-// //POST user likes articles
-// function createLikes(req, res) {
+//PUT user likes articles
+// function updateLikes(req, res) {
 //   req.body.user = req.currentUser
+//   console.log(req.currentUser)
 //   Community
 //     .findById(req.params.id)
-//     .populate('like.user')
 //     .then(community => {
 //       if (!community) res.status(404).json({ message: ' Article Not Found' })
 
-//       community.likes.push(req.body)
-
-//       res.status(200).json(community)
-//       return community.save()
+//       return res.json(community._id)
 //     })
 //     .catch(err => console.log(err))
 // }
 
 
 
-// //DELETE user likes articles
+//DELETE user likes articles
 // function removeLikes(req, res) {
 //   req.body.user = req.currentUser
 //   Community
@@ -107,6 +104,4 @@ module.exports = {
   show,
   createRating,
   removeRating
-  // createLikes,
-  // removeLikes
 }

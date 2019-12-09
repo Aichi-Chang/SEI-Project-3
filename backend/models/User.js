@@ -1,16 +1,13 @@
 const mongoose = require('mongoose') // needed to create a new schema and model
 const bcrypt = require('bcrypt') // our library used to hash our users passwords
+const uniqueValidator = require('mongoose-unique-validator')
 
-
-const likeSchema = new mongoose.Schema({
-  _id: { type: String } 
-})
 
 const userSchema = new mongoose.Schema({ // Bulding a schema just like our animals or any other model
   username: { type: String, required: true, unique: true }, // defining fields in the same way
   email: { type: String, required: true },
   password: { type: String, required: true  }, // be careful not to make passwords unique!
-  likes: [ likeSchema ]
+  likes: [{ type: mongoose.Schema.ObjectId, ref: 'users', unique: true }]
 }, {
   timestamps: true, // provides a createdAt, and updatedAt field that work out of the box for free!
   toJSON: { // I'm only sending back the username in responses (take our password and other secure fields out)
@@ -24,7 +21,7 @@ const userSchema = new mongoose.Schema({ // Bulding a schema just like our anima
   }
 })
 
-userSchema.plugin(require('mongoose-unique-validator'))
+userSchema.plugin(uniqueValidator)
 
 // setting a virtual field on the model, this only exists when a user is first created and is not saved to the database, the idea here is that we only need a 'passwordConfirmation' once, to check if it and the password are the same, so there is no reason for us to actually store this value for the long term. A virtual field on the model fufills that requirement, once creating a user you will see that the password confirmation feild does not exist
 userSchema

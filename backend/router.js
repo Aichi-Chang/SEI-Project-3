@@ -138,6 +138,7 @@ router.route('/login')
 
 router.route('/dashboard/:userId')
   .get(secureRoute, userFunc.retrieveLikes)
+  .put(secureRoute, userFunc.updateLikes)
 
 
 

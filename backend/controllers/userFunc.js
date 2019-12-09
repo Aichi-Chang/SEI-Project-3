@@ -29,7 +29,6 @@ function login(req, res) {
 
 // find user liked articles
 function retrieveLikes(req, res) {
-  req.body.user = req.currentUser
   User
     .findOne({ _id: req.params.userId })
     .then(user => {
@@ -40,11 +39,31 @@ function retrieveLikes(req, res) {
 }
 
 
+// PUT user liked articles
+function updateLikes(req, res) {
+  req.body.user = req.currentUser
+  User
+    .findOne({ _id: req.params.userId })
+    .then(user => {
+      if (!user) res.status(404).json({ message: 'User Not Found' })
+      user.likes.push(req.body)
+      
+      res.status(201).json(user)
+      return user.save()
+    })
+    
+    .catch(err => console.log(err))
+}
+
+
+
+
 
 
 module.exports = {
   register,
   login,
-  retrieveLikes
+  retrieveLikes,
+  updateLikes
 }
 // exporting each 'route handling' function, taking advantage of es6 object short hand, same as saying { login: login }
