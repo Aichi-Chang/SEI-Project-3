@@ -15,7 +15,7 @@ class cultureBooks extends React.Component {
   } '/culture-musics/:id'
 
   componentDidMount() {
-    axios.get((`/api/culture-book/${id}`))
+    axios.get(('/api/culture-books'))
       .then(res => this.setState({ cultureBData: res.data }))
       .catch(err => console.log(err))
   }
