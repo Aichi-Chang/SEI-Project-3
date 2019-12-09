@@ -3,10 +3,14 @@ const Current = require('../models/Current')
 
 // GET all 
 function index(req, res) {
+  console.log('Loading currents index...')
   Current
     .find()
     .populate('user')
-    .then(currents => res.status(200).json(currents))
+    .then(currents => {
+      console.log('Sending all currents...')
+      res.status(200).json(currents)
+    })
     .catch(err => console.log(err))
 }
 
