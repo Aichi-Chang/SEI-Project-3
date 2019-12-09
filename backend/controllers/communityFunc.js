@@ -23,8 +23,46 @@ function show(req, res) {
 }
 
 
+//POST rating
+function createRating(req, res) {
+  req.body.user = req.currentUser
+  Community
+    .findById(req.params.id)
+    .populate('rating.user')
+    .then(community => {
+      if (!community) return res.status(404).json({ message: 'Item Not Found' })
+      
+      community.ratings.push(req.body)
+      
+      res.status(201).json({ message: 'Rating Added' })
+      return community.save()
+    })
+    .catch(err => console.log(err))
+}
+
+
+//DELETE rating
+function removeRating(req, res) {
+  req.body.user = req.currentUser
+  Community
+    .findById(req.params.id)
+    .then(community => {
+      if (!community) return res.status(404).json({ message: 'Item Not Found' })
+      
+      const ratingById = community.ratings.id(req.params.raId)
+      ratingById.remove()
+
+      res.status(410).json({ message: 'Rating Deleted' })
+      return community.save()
+    })
+    .catch(err => console.log(err))
+}
+
+
 
 module.exports = {
   index,
-  show
+  show,
+  createRating,
+  removeRating
 }

@@ -3,13 +3,17 @@ const bcrypt = require('bcrypt') // our library used to hash our users passwords
 
 const userSchema = new mongoose.Schema({ // Bulding a schema just like our animals or any other model
   username: { type: String, required: true, unique: true }, // defining fields in the same way
-  email: { type: String, required: true, unique: true },
+  email: { type: String, required: true },
   password: { type: String, required: true  } // be careful not to make passwords unique!
 }, {
   timestamps: true, // provides a createdAt, and updatedAt field that work out of the box for free!
   toJSON: { // I'm only sending back the username in responses (take our password and other secure fields out)
     transform(doc, json) {
-      return { username: json.username }
+      return { 
+        username: json.username,
+        email: json.email,
+        id: json._id 
+      }
     }
   }
 })

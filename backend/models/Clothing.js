@@ -25,3 +25,4 @@ const clothingSchema = new mongoose.Schema({
 clothingSchema.plugin(uniqueValidatior)
 
 module.exports = mongoose.model('Clothing', clothingSchema)
+

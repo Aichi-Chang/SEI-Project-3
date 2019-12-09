@@ -1,4 +1,4 @@
-const express =  require('express')
+const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const { dbURI, port } = require('./config/environment')
@@ -23,6 +23,8 @@ app.use(bodyParser.json())
 
 app.use((req, res, next) => {
   console.log(`${req.method} to ${req.url}`)
+  res.header('Access-Control-Allow-Origin', '*')
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
   next()
 })
 

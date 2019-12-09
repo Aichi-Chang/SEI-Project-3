@@ -5,7 +5,7 @@ const { secret } = require('../config/environment')
 function register(req, res) {
   User
     .create(req.body) // same as creating any other resource, see animals create controller, except runs our extra pre 'save' and 'validate' methods. See /models/User for these.
-    .then(() => res.status(200).json({ message: 'Thanks' })) // if creates succesfully, send a welcome message with users username embedded
+    .then(user => res.status(200).json({ message: `Hello ${user.username}, thank you for registering` })) // if creates succesfully, send a welcome message with users username embedded
     .catch(err => {
       console.log(err)
       res.status(200).json({ message: 'Problem registering account', error: err.message })
