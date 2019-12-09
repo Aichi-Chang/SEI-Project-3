@@ -24,7 +24,7 @@ const cultureMData = (user) => {
       user: users[0]
     },
 {
-      artist: 'Post Malone',
+
       title: '',
       album: 'Stoney',
       year: 2015,

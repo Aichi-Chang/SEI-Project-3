@@ -37,7 +37,7 @@ const cultureBData = (user) => {
        comments: []
      },
    
-     {
+    {
       author: 'Stephen Fry',
        title: 'Mythos',
        year: 2017,
@@ -268,7 +268,7 @@ const cultureBData = (user) => {
        user: user[0],
        comments: []
      }
->>>>>>> films-seeding
+// >>>>>>> films-seeding
   ]
 }
 
