@@ -6,6 +6,11 @@ const ratingSchema = new mongoose.Schema({
   user: { type: mongoose.Schema.ObjectId, ref: 'User', required: true }
 })
 
+const likeSchema = new mongoose.Schema({
+  like: { type: Boolean },
+  user: { type: mongoose.Schema.ObjectId, ref: 'User', required: true }
+})
+
 const communitySchema = new mongoose.Schema({
   title: { type: String },
   image: { type: String },
@@ -14,7 +19,8 @@ const communitySchema = new mongoose.Schema({
   lat: { type: Number },
   address: { type: String },
   website: { type: String },
-  ratings: [ ratingSchema ]
+  ratings: [ ratingSchema ],
+  likes: { likeSchema }
 }, {
   timestamps: true
 })

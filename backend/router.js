@@ -41,6 +41,8 @@ router.route('/communities')
 
 router.route('/communities/:id')
   .get(communityFunc.show)
+  .post(secureRoute, communityFunc.saveToDash)
+  .delete(secureRoute, communityFunc.removeFromDash)
 
 
 router.route('/communities/:id/ratings')
@@ -49,6 +51,7 @@ router.route('/communities/:id/ratings')
 
 router.route('/communities/:id/ratings/:raId')
   .delete(secureRoute, communityFunc.removeRating)
+ 
 
   
 // ************************ cultureB ************************
@@ -124,6 +127,9 @@ router.route('/register')
 router.route('/login')
   .post(userFunc.login)
 
+
+router.route('/dashboard/:userId')
+  .get()
 
 
 
