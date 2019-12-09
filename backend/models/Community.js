@@ -1,13 +1,14 @@
 const mongoose = require('mongoose')
 const uniqueValidatior = require('mongoose-unique-validator')
 
+
 const ratingSchema = new mongoose.Schema({
   rating: { type: Number, min: 1, max: 5, required: true },
   user: { type: mongoose.Schema.ObjectId, ref: 'User', required: true }
 })
 
 const likeSchema = new mongoose.Schema({
-  like: { type: Boolean },
+  like: { type: Boolean, required: true },
   user: { type: mongoose.Schema.ObjectId, ref: 'User', required: true }
 })
 
@@ -19,8 +20,9 @@ const communitySchema = new mongoose.Schema({
   lat: { type: Number },
   address: { type: String },
   website: { type: String },
+  user: { type: mongoose.Schema.ObjectId, ref: 'User' },
   ratings: [ ratingSchema ],
-  likes: { likeSchema }
+  likes: [ likeSchema ]
 }, {
   timestamps: true
 })

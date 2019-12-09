@@ -7,6 +7,7 @@ const cultureFFunc = require('./controllers/cultureFFunc')
 const cultureMFunc = require('./controllers/cultureMFunc')
 const currentFunc = require('./controllers/currentFunc')
 const userFunc = require('./controllers/userFunc')
+const likeFunc = require('./controllers/likeFunc')
 
 const secureRoute = require('./lib/secureRoute')
 
@@ -41,8 +42,11 @@ router.route('/communities')
 
 router.route('/communities/:id')
   .get(communityFunc.show)
-  .post(secureRoute, communityFunc.saveToDash)
-  .delete(secureRoute, communityFunc.removeFromDash)
+  .post(secureRoute, communityFunc.createLikes)
+
+
+router.route('/communities/:id/:likeId')  
+  .delete(secureRoute, communityFunc.removeLikes)
 
 
 router.route('/communities/:id/ratings')
@@ -91,19 +95,19 @@ router.route('/culture-films/:id/comments/:commentId')
 
 
 // ************************ cultureM ************************
-router.route('/culture-musics')
+router.route('/culture-music')
   .get(cultureMFunc.index)
 
 
-router.route('/culture-musics/:id')
+router.route('/culture-music/:id')
   .get(cultureMFunc.show)
 
 
-router.route('/culture-musics/:id/comments')
+router.route('/culture-music/:id/comments')
   .post(secureRoute, cultureMFunc.createComment)
 
 
-router.route('/culture-musics/:id/comments/:commentId')
+router.route('/culture-music/:id/comments/:commentId')
   .delete(secureRoute, cultureMFunc.removeComment)
 
 
@@ -128,8 +132,13 @@ router.route('/login')
   .post(userFunc.login)
 
 
+
+
+// ************************ dashboard ************************
+
 router.route('/dashboard/:userId')
-  .get()
+  .get(secureRoute, likeFunc.likeIndex)
+
 
 
 

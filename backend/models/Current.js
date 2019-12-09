@@ -5,7 +5,8 @@ const currentSchema = new mongoose.Schema({
   title: { type: String },
   image: { type: String },
   text: { type: String },
-  author: { type: String }
+  author: { type: String },
+  user: { type: mongoose.Schema.ObjectId, ref: 'User' }
 }, {
   timestamps: true
 })
