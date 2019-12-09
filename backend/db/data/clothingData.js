@@ -10,7 +10,7 @@ const clothingData = (user) => {
     department: 'wewrew',
     product: 'sdfqwe',
     user: user[0],
-    comment: []
+    comments: []
   } 
   ]
 }

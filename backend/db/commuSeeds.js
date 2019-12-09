@@ -8,12 +8,12 @@ const commuData = require('./data/CommuData')
 mongoose.connect(
   dbURI,
   { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true },
-  (err, db) => {
+  (err) => {
     if (err) return console.log(err)
     // .then(() => User.create(userData))
     // .then(users => console.log(`${users.length} User Created!`))      
     Community.create(commuData)  
-      .then(current => console.log(`${current.length} Article Created!`))
+      .then(current => console.log(`${current.length} Commu Article Created`))
       .catch(err => console.log(err))
       .finally(() => mongoose.connection.close())
   }

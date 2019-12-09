@@ -7,8 +7,9 @@ const cultureBData = (user) => {
     review: 'xxxxx',
     image: 'xxx',
     rating: 1,
+    category: 'xxsd',
     user: user[0],
-    comment: []
+    comments: []
   },
   {
     author: 'xxx2xx',
@@ -17,8 +18,9 @@ const cultureBData = (user) => {
     review: 'xxx2xx',
     image: 'xx2x',
     rating: 1,
+    category: 'xxsd',
     user: user[0],
-    comment: []
+    comments: []
   }
   ]
 }

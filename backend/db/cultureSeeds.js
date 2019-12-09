@@ -13,7 +13,7 @@ const cultureMData = require('./data/cultureMData')
 mongoose.connect(
   dbURI,
   { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true },
-  (err, db) => {
+  (err) => {
     if (err) return console.log(err)
     User.create([{
       username: 'Sonia',
@@ -22,7 +22,7 @@ mongoose.connect(
       passwordConfirmation: '12345'
     }])
       .then(users => {
-        console.log(`${users.length} User Created!`)
+        console.log(`${users.length} Culture User Created`)
         return CultureB.create(cultureBData(users))
       })
       .then(cultureB => console.log(`${cultureB.length} Book Articles Created`)) 

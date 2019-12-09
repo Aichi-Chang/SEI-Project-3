@@ -30,7 +30,7 @@ function createComment(req, res) {
     .findById(req.params.id)
     .populate('comment.user')
     .then(cultureF => {
-      if (!cultureF) return res.stauts(404).json({ message: 'article Not Found' })
+      if (!cultureF) return res.status(404).json({ message: 'article Not Found' })
       
       cultureF.comments.push(req.body)
       
@@ -47,7 +47,7 @@ function removeComment(req, res) {
   CultureF
     .findById(req.params.id)
     .then(cultureF => {
-      if (!cultureF) return res.stauts(404).json({ message: 'articleNot Found' })
+      if (!cultureF) return res.status(404).json({ message: 'articleNot Found' })
       
       const commentById = cultureF.comments.id(req.params.commentId)
       commentById.remove()
