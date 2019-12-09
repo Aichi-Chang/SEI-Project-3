@@ -4,8 +4,6 @@ const Clothing = require('../models/Clothing')
 const User = require('../models/User')
 const clothingData = require('./data/clothingData')
 // const userData = require('./data/userData.js')
-
-
 mongoose.connect(
   dbURI,
   { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true },
