@@ -14,22 +14,22 @@ const secureRoute = require('./lib/secureRoute')
 
 
 // ************************ clothing ************************
-router.route('/clothings')
+router.route('/clothing')
   .get(clothingFunc.index)
   .post(secureRoute, clothingFunc.create)
 
 
-router.route('/clothings/:id')
+router.route('/clothing/:id')
   .get(clothingFunc.show)
   .put(secureRoute, clothingFunc.update)
   .delete(secureRoute, clothingFunc.remove)
 
 
-router.route('/clothings/:id/comments')
+router.route('/clothing/:id/comments')
   .post(secureRoute, clothingFunc.createComment)
 
 
-router.route('/clothings/:id/comments/:commentId')
+router.route('/clothing/:id/comments/:commentId')
   .delete(secureRoute, clothingFunc.removeComment)
 
 
