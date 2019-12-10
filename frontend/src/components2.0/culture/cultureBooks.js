@@ -1,18 +1,18 @@
 import React from 'react'
 import axios from 'axios'
 
-import cultureCards from './cultureCards'
+import BookCards from './bookCards'
 //'cheeses' equivolent in cheesebored 
 
 //list of music/albums
-class cultureBooks extends React.Component {
+class CultureBooks extends React.Component {
 
   constructor() {
     super()
     this.state = {
       cultureBData: []
     }
-  } '/culture-musics/:id'
+  } 
 
   componentDidMount() {
     axios.get(('/api/culture-books'))
@@ -26,7 +26,7 @@ class cultureBooks extends React.Component {
       <div className="container">
         <div className="columns is-mobile is-multiline">
           {this.state.cultureBData.map((book, i) => {
-            return <bookCards key={i} book={book}/>
+            return <BookCards key={i} book={book}/>
           })}
         </div>
       </div>
@@ -34,4 +34,4 @@ class cultureBooks extends React.Component {
   }
 }
 
-export default cultureBooks
+export default CultureBooks

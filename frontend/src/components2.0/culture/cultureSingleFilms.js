@@ -13,7 +13,7 @@ class SingleFilms extends React.Component {
 
   componentDidMount() {
     const id = this.props.match.params.id
-    axios.get(`/api/culture-film/${id}`)
+    axios.get(`/api/culture-films/${id}`)
       .then(resp => this.setState({ film: resp.data }))
       .catch(err => this.setState({ err: err.response.status }))
   }

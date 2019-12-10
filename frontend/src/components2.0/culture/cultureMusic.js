@@ -1,32 +1,31 @@
 import React from 'react'
 import axios from 'axios'
-
-import cultureCards from './cultureCards'
+import MusicCards from './musicCards'
 //'cheeses' equivolent in cheesebored 
 
-//list of films
-class cultureFilms extends React.Component {
+//list of music/albums
+class cultureMusic extends React.Component {
 
   constructor() {
     super()
     this.state = {
-      cultureFData: []
+      cultureMData: []
     }
   }
 
   componentDidMount() {
-    axios.get(('/api/culture-films'))
-      .then(res => this.setState({ cultureFData: res.data }))
+    axios.get('/api/culture-music')
+      .then(res => this.setState({ cultureMData: res.data }))
       .catch(err => console.log(err))
   }
 
   render() {
-    console.log(this.state.cultureFData)
+    console.log(this.state.cultureMData)
     return <div className="section">
       <div className="container">
         <div className="columns is-mobile is-multiline">
-          {this.state.cultureFData.map((film, i) => {
-            return <cultureCards key={i} film={film}/>
+          {this.state.cultureMData.map((musicAlbum, i) => {
+            return <MusicCards key={i} musicAlbum={musicAlbum}/>
           })}
         </div>
       </div>
@@ -34,4 +33,4 @@ class cultureFilms extends React.Component {
   }
 }
 
-export default cultureFilms
+export default cultureMusic
