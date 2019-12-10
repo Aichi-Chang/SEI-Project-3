@@ -1,19 +1,17 @@
 import React from 'react'
-import useAxios from './UseAxios'
+import UseAxios from '../UseAxios'
 import ClothingCard from './ClothingCard'
+import 'bulma'
 
 const ClothesListing = () => {
-  const data = useAxios('/api/clothing')
-  console.log(data)
+  const data = UseAxios('/api/clothing')
+  // console.log(data) 
   return (
     <div className="section">
       <div className="container">
         <div className="columns is-mobile is-multiline">
-          {data.map((clothes, i) => {
-            return <div key={i}>
-              <img src={clothes.image} alt="Placeholder image"/>
-              <p>{clothes.title}</p>
-            </div>
+          {data.map((clothing, index) => {
+            return <ClothingCard key={index} item={clothing}/>
           })}
         </div>
       </div>
