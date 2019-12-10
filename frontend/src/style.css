@@ -1,3 +1,8 @@
 .nav-wrapper nav {
   background-color: grey;
 }
+
+section.cultureHome.hero.is-fullheight {
+  background-image: url('../src/images/cultureImg/music/gig.jpeg');
+  background-size: cover;
+}
