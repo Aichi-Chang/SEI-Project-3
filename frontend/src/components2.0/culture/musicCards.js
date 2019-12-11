@@ -11,7 +11,7 @@ export const MusicCards = ({ musicAlbum }) => (
         </figure>
       </div>
       <div className="card-content">
-        <Link className="subtitle" to={`/api/culture-music/${musicAlbum._id}`}>{musicAlbum.album}</Link>
+        <Link className="subtitle" to={`/culture-music/${musicAlbum._id}`}>{musicAlbum.album}</Link>
         <p className="has-text-grey-darker">{musicAlbum.artist}</p>
       </div>
     </div>

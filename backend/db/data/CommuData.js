@@ -6,8 +6,7 @@ module.exports = [
     lng: -0.078388,
     lat: 51.560016,
     address: 'Esters, 55 Kynaston Road, N16 0EB',
-    website: '',
-    ratings: []
+    website: ''
   },
   {
     title: 'SHOP: BYO-PLASTIC-FREE SHOP',
@@ -16,8 +15,7 @@ module.exports = [
     lng: -0.056797,
     lat: 51.466056,
     address: '147 Evelina Rd, London SE15 3HB',
-    website: '',
-    ratings: []
+    website: ''
   },
   {
     title: 'CAFE: REGENCY CAFÉ',
@@ -26,8 +24,7 @@ module.exports = [
     lng: -0.132213,
     lat: 51.494188,
     address: 'Regency Café, 17-19 Regency Street, SW1P 4BY',
-    website: '',
-    ratings: []
+    website: ''    
   },
   {
     title: 'BAR: PATRON-CAVE À MANGER',
@@ -36,8 +33,8 @@ module.exports = [
     lng: -0.1408238,
     lat: 51.5526938,
     address: '26 Fortess Road Kentish Town London NW5 2HB',
-    website: '',
-    ratings: []
+    website: ''
+    
   },
   {
     title: 'RESTAURANT: BUN HOUSE',
@@ -46,8 +43,8 @@ module.exports = [
     lng: -0.12988,
     lat: 51.511776,
     address: 'Bun House, 26-27 Lisle Street, WC2H 7BA',
-    website: '',
-    ratings: []
+    website: ''
+    
   },
   {
     title: 'BAR: FRANK\'S CAFE',
@@ -56,8 +53,8 @@ module.exports = [
     lng: -0.068213,
     lat: 51.469906,
     address: 'Frank\'s Café, Bold Tendencies, 7th-10th Floor Multi Storey Car Park, 95A Rye Lane, London SE15 4ST',
-    website: '',
-    ratings: []
+    website: ''
+    
   },
   {
     title: 'CAFE: GINGER & WHITE',
@@ -66,8 +63,8 @@ module.exports = [
     lng: -0.177779,
     lat: 551.555678,
     address: 'Ginger & White, 4a-5a Perrin\'s Court, NW3 1QS',
-    website: '',
-    ratings: []
+    website: ''
+    
   },
   {
     title: 'SHOP: TOKYO BIKE',
@@ -76,8 +73,8 @@ module.exports = [
     lng: -0.0841537,
     lat: 51.5259203,
     address: '87-89 Tabernacle Street Shoreditch London EC2A 4BA',
-    website: '',
-    ratings: []
+    website: ''
+    
   },
   {
     title: 'RESTAURANT: YAMA MOMO',
@@ -86,8 +83,8 @@ module.exports = [
     lng: -0.0752634,
     lat: 51.4582584,
     address: '72 Lordship Ln, East Dulwich, London SE22 8HF',
-    website: '',
-    ratings: []
+    website: ''
+    
   },
   {
     title: 'CAFE: ONE & ALL',
@@ -96,8 +93,8 @@ module.exports = [
     lng: -0.06676,
     lat: 51.465384,
     address: 'One & All, 28 Peckham Rye, SE15 4JR',
-    website: '',
-    ratings: []
+    website: ''
+    
   },
   {
     title: 'SHOP: FOREST',
@@ -106,8 +103,8 @@ module.exports = [
     lng: -0.1117120,
     lat: 51.5217475,
     address: '115 Clerkenwell Rd, EC1R 5BY',
-    website: '',
-    ratings: []
+    website: ''
+    
   },
   {
     title: 'RESTAURANT: SUNDAY',
@@ -116,8 +113,8 @@ module.exports = [
     lng: -0.1135948,
     lat: 51.5426679,
     address: '169 Hemingford RdLondon N1 1DA',
-    website: '',
-    ratings: []
+    website: ''
+    
   },
   {
     title: 'SHOP: CORNERCOPIA',
@@ -126,8 +123,8 @@ module.exports = [
     lng: -0.1135442,
     lat: 51.4621978,
     address: 'Brixton Village, Unit 37-38 Coldharbour Ln, Brixton, London SW9 8PR',
-    website: '',
-    ratings: []
+    website: ''
+    
   },
   {
     title: 'BAR: MOTHER KELLY\'S',
@@ -136,8 +133,8 @@ module.exports = [
     lng: -0.0561730,
     lat: 51.5283630,
     address: '251 Paradise Row Bethnal Green London E2 9BU',
-    website: '',
-    ratings: []
+    website: ''
+    
   },
   {
     title: 'SHOP: ARTWORDS',
@@ -146,8 +143,8 @@ module.exports = [
     lng: -0.0798289,
     lat: 51.5262188,
     address: '69 Rivington Street London EC2A 3AY',
-    website: '',
-    ratings: []
+    website: ''
+    
   },
   {
     title: 'CAFE: BRUNSWICK EAST BAKEHOUSE',
@@ -156,8 +153,8 @@ module.exports = [
     lng: -0.067115,
     lat: 51.554761,
     address: 'Brunswick East Bakehouse, Hackney Downs Studios, 17 Amhurst Terrace, E8 2BT',
-    website: '',
-    ratings: []
+    website: ''
+    
   },
   {
     title: 'RESTAURANT: 10 GREEK STREET',
@@ -166,7 +163,7 @@ module.exports = [
     lng: -0.1309956,
     lat: 51.5144593,
     address: '10 Greek Street, London W1D 4DH',
-    website: '',
-    ratings: []
+    website: ''
+    
   }      
 ]

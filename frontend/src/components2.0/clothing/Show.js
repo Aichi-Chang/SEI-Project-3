@@ -1,5 +1,5 @@
 import React from 'react'
-import useAxios from '../UseAxios'
+import useAxios from '../commonComponents/UseAxios'
 import 'bulma'
 
 const SingleClothing = (props) => {

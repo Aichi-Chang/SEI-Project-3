@@ -13,17 +13,14 @@ import CultureBooks from './components2.0/culture/cultureBooks'
 import CultureSingleBooks from './components2.0/culture/cultureSingleBooks'
 import CultureMusic  from './components2.0/culture/cultureMusic'
 import CultureSingleMusic from './components2.0/culture/cultureSingleMusic'
-// import { cultureCards }  from './components/cultureCards'
-
-//Styling
-// import '@trendmicro/react-sidenav/dist/react-sidenav.css'
-// import 'bulma'
-
-
 import ClothesListing from './components2.0/clothing/Index'
 import CommunityListing from './components2.0/community/Index'
 import SingleCommunity from './components2.0/community/Show'
 import SingleClothing from './components2.0/clothing/Show'
+import RegisterUser from './components2.0/user/RegisterUser'
+import LoginUser from './components2.0/user/LogingUser'
+import Home from './components2.0/commonComponents/Home'
+
 
 
 
@@ -33,6 +30,7 @@ const App = () => {
 
   return <BrowserRouter>
     <Switch>
+      <Route exact path= '/' component={Home} />
       <Route exact path= '/clothing' component={ClothesListing} />
       <Route exact path= '/clothing/:id' component={SingleClothing} /> 
       <Route exact path= '/communities' component={CommunityListing} />
@@ -43,6 +41,8 @@ const App = () => {
       <Route path="/culture-books" component={CultureBooks} />
       <Route path="/culture-music/:id" component={CultureSingleMusic} />
       <Route path="/culture-music" component={CultureMusic} />
+      <Route path="/register" component={RegisterUser} />
+      <Route path="/login" component={LoginUser} />
     </Switch>
 
 

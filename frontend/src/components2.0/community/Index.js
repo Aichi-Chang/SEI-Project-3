@@ -1,10 +1,10 @@
 import React from 'react'
-import UseAxios from '../UseAxios'
+import UseAxios from '../commonComponents/UseAxios'
 import CommunityCard from './CommunityCard'
 
 const CommunityListing = () => {
   const data = UseAxios('/api/communities')
-  console.log(data)
+  // console.log(data)
   return (
     <div className="section">
       <div className="container">
