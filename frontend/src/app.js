@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-// import Auth from './lib/auth'
+import Auth from './lib/auth'
 // import SideNav from './components/SideNav'
 // import Main from './components/Main'
 
@@ -28,7 +28,8 @@ import Home from './components2.0/commonComponents/Home'
 
 const App = () => {
 
-
+  // console.log(Auth.getToken())
+  // console.log(Auth.getUser().username)
   return <BrowserRouter>
     <Switch>
       <Route exact path= '/' component={Home} />

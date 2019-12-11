@@ -94,7 +94,7 @@ function removeComment(req, res) {
       const commentById = clothing.comments.id(req.params.commentId)
       commentById.remove()
 
-      res.status(410).json({ message: 'Comment Deleted' })
+      res.status(200).json({ message: 'Comment Deleted' })
       return clothing.save()
     })
     .catch(err => console.log(err))

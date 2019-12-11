@@ -53,7 +53,7 @@ router.route('/communities/:id/comments')
   .post(secureRoute, communityFunc.createComment)
 
 
-router.route('/communities/:id/comments/:commentsId')
+router.route('/communities/:id/comments/:commentId')
   .delete(secureRoute, communityFunc.removeComment)
  
 
@@ -121,6 +121,13 @@ router.route('/currents')
 router.route('/currents/:id')
   .get(currentFunc.show)
 
+router.route('/currents/:id/comments')
+  .post(secureRoute, currentFunc.createComment)
+
+
+router.route('/currents/:id/comments/:commentId')
+  .delete(secureRoute, currentFunc.removeComment)
+
 
 
 // ************************ user ************************
@@ -130,7 +137,6 @@ router.route('/register')
 
 router.route('/login')
   .post(userFunc.login)
-
 
 
 
