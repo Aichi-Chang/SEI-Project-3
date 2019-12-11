@@ -36,6 +36,9 @@ class SingleBooks extends React.Component {
             <p>
               {this.state.book.review}
             </p>
+            <p>
+            Vault Rating: {this.state.book.rating}
+            </p>
           </div>
           <div className="column is-half-tablet">
             <img src={this.state.book.image} />

@@ -198,7 +198,24 @@ const cultureFData = (user) => {
     user: user[0],
     comments: [] 
   },
-
+  {
+    title: 'Aladdin',
+    year: 2019,
+    image: 'https://i.imgur.com/rhDrz6b.jpg',
+    summary: 'laddin has a long and illustrious legacy. As usual, the plot of street beggar, Aladdin, and Princess Jasmine fighting for their love has a sweet spot in every Disney fan\'s heart. This movie was an easy watch. It has elements of comedy, action, romance, and adventure. What\'s not to like?',
+    rating: 5,
+    user: user[0],
+    comments: [] 
+  },
+  {
+    title: 'Little Women',
+    year: 2019,
+    image: 'https://i.imgur.com/lni2ShH.jpg',
+    summary: 'Suffice to say, this film is destined to be a perennial.The stand-out performance is Laura Dern\'s. As Jo, Saoirse Ronan is more the glue holding the narrative together, generously supporting all the others. Even the things worthy of criticism enhance the entertainment value. The poverty of the wartime March family--indeed the entire Civil War aspect of the story-- is played down. Costumes and interiors are affluent, bordering on Gilded Age. Like many other period films, there are far too many candles and oil lamps lit in the daytime with sun streaming in the windows. This is LITTLE WOMEN seen through the prism of contemporary gender politics, and that is okay by me!',
+    rating: 5,
+    user: user[0],
+    comments: [] 
+  },
   {
     title: 'The Princess Bride',
     year: 1987,
@@ -208,7 +225,15 @@ const cultureFData = (user) => {
     user: user[0],
     comments: [] 
   },
-
+  {
+    title: 'Frozen 2',
+    year: 2019,
+    image: 'https://i.imgur.com/i5BO7A3.jpg',
+    summary: 'The sisters are back! Anna, Elsa, Kristoff, Olaf and Sven leave Arendelle to travel to an ancient, autumn-bound forest of an enchanted land. They set out to find the origin of Elsa\'s powers in order to save their kingdom.',
+    rating: 5,
+    user: user[0],
+    comments: [] 
+  },
   {
     title: 'Captain Marvel',
     year: 2019,

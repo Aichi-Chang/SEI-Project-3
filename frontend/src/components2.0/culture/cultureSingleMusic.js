@@ -39,8 +39,7 @@ class SingleMusic extends React.Component {
             <p>
               {this.state.musicAlbum.summary}
             </p>
-            <p>
-              {this.state.musicAlbum.rating}
+            <p> Vault Rating: {this.state.musicAlbum.rating}
             </p>
           </div>
           <div className="column is-half-tablet">

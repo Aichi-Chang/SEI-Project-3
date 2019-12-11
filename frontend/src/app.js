@@ -6,6 +6,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 // import SideNav from './components/SideNav'
 // import Main from './components/Main'
 
+
 //culture
 import CultureFilms from './components2.0/culture/cultureFilms'
 import CultureSingleFilms from './components2.0/culture/cultureSingleFilms'
@@ -24,6 +25,7 @@ import ClothesListing from './components2.0/clothing/Index'
 import CommunityListing from './components2.0/community/Index'
 import SingleCommunity from './components2.0/community/Show'
 import SingleClothing from './components2.0/clothing/Show'
+import Homepage from './components/Homepage'
 
 
 
@@ -33,6 +35,7 @@ const App = () => {
 
   return <BrowserRouter>
     <Switch>
+      <Route exact path="/" component={Homepage} />
       <Route exact path= '/clothing' component={ClothesListing} />
       <Route exact path= '/clothing/:id' component={SingleClothing} /> 
       <Route exact path= '/communities' component={CommunityListing} />

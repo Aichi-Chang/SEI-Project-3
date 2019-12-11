@@ -24,7 +24,7 @@ class CultureFilms extends React.Component {
     console.log(this.state.cultureFData)
     return <div className="section">
       <div className="container">
-        <div className="columns is-mobile is-multiline">
+        <div className="img columns is-mobile is-multiline">
           {this.state.cultureFData.map((film, i) => {
             return <FilmCards key={i} film={film}/>
           })}

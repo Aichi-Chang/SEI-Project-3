@@ -4,7 +4,7 @@ import MusicCards from './musicCards'
 //'cheeses' equivolent in cheesebored 
 
 //list of music/albums
-class cultureMusic extends React.Component {
+class CultureMusic extends React.Component {
 
   constructor() {
     super()
@@ -33,4 +33,4 @@ class cultureMusic extends React.Component {
   }
 }
 
-export default cultureMusic
+export default CultureMusic

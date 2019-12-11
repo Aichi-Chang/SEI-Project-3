@@ -6,12 +6,12 @@ export const MusicCards = ({ musicAlbum }) => (
   <div className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
     <div className="card">
       <div className="card-image">
-        <figure className="image is-4by3">
+        <figure className="image is-4by4">
           <img src={musicAlbum.image} alt="Placeholder image"/>
         </figure>
       </div>
       <div className="card-content">
-        <Link className="subtitle" to={`/api/culture-music/${musicAlbum._id}`}>{musicAlbum.album}</Link>
+        <Link className="subtitle" to={`/culture-music/${musicAlbum._id}`}>{musicAlbum.album}</Link>
         <p className="has-text-grey-darker">{musicAlbum.artist}</p>
       </div>
     </div>

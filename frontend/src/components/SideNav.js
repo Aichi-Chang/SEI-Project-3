@@ -53,6 +53,34 @@ function SideNavComponent() {
                 </NavIcon>
                 <NavText>{route}</NavText>
               </NavItem>
+
+               <NavItem key={route} eventKey={route}>
+               <NavIcon>
+                 {/* <i className="fa fa-fw fa-device" style={{ fontSize: '1.75em' }} /> */}
+               </NavIcon>
+               <NavText>{Clothing}</NavText>
+             </NavItem>
+
+              <NavItem key={route} eventKey={route}>
+              <NavIcon>
+              {/* <i className="fa fa-fw fa-device" style={{ fontSize: '1.75em' }} /> */}
+              </NavIcon>
+              <NavText>{Current}</NavText>
+              </NavItem>
+            
+              <NavItem key={route} eventKey={route}>
+              <NavIcon>
+              {/* <i className="fa fa-fw fa-device" style={{ fontSize: '1.75em' }} /> */}
+              </NavIcon>
+              <NavText>{Community}</NavText>
+              </NavItem>
+
+              <NavItem key={route} eventKey={route}>
+              <NavIcon>
+              {/* <i className="fa fa-fw fa-device" style={{ fontSize: '1.75em' }} /> */}
+              </NavIcon>
+              <NavText>{Culture}</NavText>
+              </NavItem>
             ))}
           </Nav>
         </SideNav>

@@ -5,7 +5,7 @@ export const BookCards = ({ book }) => (
   <div className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
     <div className="card">
       <div className="card-image">
-        <figure className="image is-4by3">
+        <figure className="image is-4by6">
           <img src={book.image} alt="Placeholder image"/>
         </figure>
       </div> 

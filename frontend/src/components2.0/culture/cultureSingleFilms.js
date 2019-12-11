@@ -37,7 +37,7 @@ class SingleFilms extends React.Component {
               {this.state.film.summary}
             </p>
             <p>
-              {this.state.film.rating}
+            Vault Rating: {this.state.film.rating}
             </p>
           </div>
           <div className="column is-half-tablet">
