@@ -52,7 +52,7 @@ function removeComment(req, res) {
       const commentById = cultureM.comments.id(req.params.commentId)
       commentById.remove()
 
-      res.status(410).json({ message: 'Comment Deleted' })
+      res.status(200).json({ message: 'Comment Deleted' })
       return cultureM.save()
     })
     .catch(err => console.log(err))

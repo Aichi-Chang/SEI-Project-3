@@ -85,7 +85,7 @@ function removeComment(req, res) {
     .then(community => {
       if (!community) return res.status(404).json({ message: 'Item Not Found' })
       
-      const commentById = community.comments.id(req.params.commentsId)
+      const commentById = community.comments.id(req.params.commentId)
       commentById.remove()
 
       res.status(200).json({ message: 'Comment Deleted' })
