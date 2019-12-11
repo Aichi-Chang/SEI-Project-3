@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 
 
-const Home = (props) => {
+const Home = () => {
 
   return (
     <div>
