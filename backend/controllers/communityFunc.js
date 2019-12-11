@@ -59,40 +59,41 @@ function show(req, res) {
 
 
 
-//POST rating
-function createRating(req, res) {
+//POST comment
+function createComment(req, res) {
   req.body.user = req.currentUser
   Community
     .findById(req.params.id)
-    .populate('rating.user')
+    .populate('comment.user')
     .then(community => {
-      if (!community) return res.status(404).json({ message: 'Article Not Found' })
-
-      community.ratings.push(req.body)
+      if (!community) return res.status(404).json({ message: 'Item Not Found' })
       
-      res.status(201).json({ message: 'Rating Added' })
+      community.comments.push(req.body)
+      
+      res.status(201).json({ message: 'Comment Added' })
       return community.save()
     })
     .catch(err => console.log(err))
 }
 
 
-//DELETE rating
-function removeRating(req, res) {
+//DELETE comment
+function removeComment(req, res) {
   req.body.user = req.currentUser
   Community
     .findById(req.params.id)
     .then(community => {
-      if (!community) return res.status(404).json({ message: 'Article Not Found' })
+      if (!community) return res.status(404).json({ message: 'Item Not Found' })
       
-      const ratingById = community.ratings.id(req.params.raId)
-      ratingById.remove()
+      const commentById = community.comments.id(req.params.commentId)
+      commentById.remove()
 
-      res.status(410).json({ message: 'Rating Deleted' })
+      res.status(410).json({ message: 'Comment Deleted' })
       return community.save()
     })
     .catch(err => console.log(err))
 }
+
 
 
 
@@ -102,6 +103,6 @@ function removeRating(req, res) {
 module.exports = {
   index,
   show,
-  createRating,
-  removeRating
+  createComment,
+  removeComment
 }

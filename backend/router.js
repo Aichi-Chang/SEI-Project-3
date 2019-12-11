@@ -49,12 +49,12 @@ router.route('/communities/:id')
 //   .delete(secureRoute, communityFunc.removeLikes)
 
 
-router.route('/communities/:id/ratings')
-  .post(secureRoute, communityFunc.createRating)
+router.route('/communities/:id/comments')
+  .post(secureRoute, communityFunc.createComment)
 
 
-router.route('/communities/:id/ratings/:raId')
-  .delete(secureRoute, communityFunc.removeRating)
+router.route('/communities/:id/comments/:commentsId')
+  .delete(secureRoute, communityFunc.removeComment)
  
 
   

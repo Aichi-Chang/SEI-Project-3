@@ -1,5 +1,5 @@
 import React from 'react'
-import UseAxios from '../UseAxios'
+import UseAxios from '../commonComponents/UseAxios'
 import ClothingCard from './ClothingCard'
 import 'bulma'
 
