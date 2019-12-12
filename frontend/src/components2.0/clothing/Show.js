@@ -21,6 +21,7 @@ const SingleClothing = (props) => {
     axios.delete(`/api/clothing/${props.match.params.id}/comments/${e.target.id}`, {
       headers: { Authorization: `Bearer ${Auth.getToken()}` }
     })
+      .then(res => setData(res.data)) 
   }
 
  
@@ -44,6 +45,8 @@ const SingleClothing = (props) => {
 
         <CommentForm 
           url={`/api/clothing/${props.match.params.id}/comments`}
+          updateData={setData}
+          data={data}
         />
 
         <div className='columns'>
@@ -57,8 +60,6 @@ const SingleClothing = (props) => {
                 <button className="delete" id={comment._id} onClick={(e) => handleDelete(e)}></button> 
               </div>
             )}
-            <div className='column'>
-            </div>
           </div>
         </div> 
       </div>

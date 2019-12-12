@@ -72,7 +72,6 @@ function createComment(req, res) {
       
       res.status(201).json(community.comments)
       
-      
       return  community.save()
     })
     .catch(err => console.log(err))
@@ -89,6 +88,7 @@ function removeComment(req, res, next) {
       
       const commentById = community.comments.id(req.params.commentId)
       commentById.remove()
+      // res.status(200).json({ message: 'Comment Deleted' }) 
       return community.save()
     })
     .then(community =>  Community.populate(community, 'user comments.user'))

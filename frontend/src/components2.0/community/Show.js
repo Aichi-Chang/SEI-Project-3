@@ -55,8 +55,7 @@ const SingleCommunity = (props) => {
           <div className='column'>
             {data.comments.map((comment) => 
               <div className="is-half" 
-                key={comment._id}  
-              > 
+                key={comment._id}> 
                 <div>{comment.content}</div>
                 <br />
                 {/* <div>from {`${Auth.getUser().username}`}</div> */}

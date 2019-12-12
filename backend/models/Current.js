@@ -12,7 +12,7 @@ const currentSchema = new mongoose.Schema({
   text: { type: String },
   author: { type: String },
   user: { type: mongoose.Schema.ObjectId, ref: 'User' },
-  comment: [ commentSchema ]
+  comments: [ commentSchema ]
 }, {
   timestamps: true
 })
