@@ -24,7 +24,7 @@ module.exports = [
     lng: -0.132213,
     lat: 51.494188,
     address: 'Regency Café, 17-19 Regency Street, SW1P 4BY',
-    website: ''    
+    website: ''   
   },
   {
     title: 'BAR: PATRON-CAVE À MANGER',
@@ -34,7 +34,6 @@ module.exports = [
     lat: 51.5526938,
     address: '26 Fortess Road Kentish Town London NW5 2HB',
     website: ''
-    
   },
   {
     title: 'RESTAURANT: BUN HOUSE',
@@ -44,10 +43,9 @@ module.exports = [
     lat: 51.511776,
     address: 'Bun House, 26-27 Lisle Street, WC2H 7BA',
     website: ''
-    
   },
   {
-    title: 'RESTUARANT: SKETCH LONDON',
+    title: 'RESTAURANT: SKETCH LONDON',
     image: 'https://i.imgur.com/AYu220n.jpg',
     text: 'SKETCH LONDON is located in lovely Mayfair. This must be what it looks like inside a candyfloss machine. I mean, if that candyfloss machine had 91 colourful David Shrigley artworks chucked in for good measure, as sketch does. Head here for a classic afternoon tea, from £59pp, served 11.30am – 4.30pm seven days a week, or their a la carte dinner option, about £70pp, served until 2am for all you night owls. ',
     lng: -0.141800,
@@ -63,7 +61,6 @@ module.exports = [
     lat: 51.469906,
     address: 'Frank\'s Café, Bold Tendencies, 7th-10th Floor Multi Storey Car Park, 95A Rye Lane, London SE15 4ST',
     website: ''
-    
   },
   {
     title: 'CAFE: GINGER & WHITE',
@@ -73,7 +70,6 @@ module.exports = [
     lat: 551.555678,
     address: 'Ginger & White, 4a-5a Perrin\'s Court, NW3 1QS',
     website: ''
-    
   },
   {
     title: 'SHOP: TOKYO BIKE',
@@ -83,7 +79,6 @@ module.exports = [
     lat: 51.5259203,
     address: '87-89 Tabernacle Street Shoreditch London EC2A 4BA',
     website: ''
-    
   },
   {
     title: 'RESTAURANT: YAMA MOMO',
@@ -93,7 +88,6 @@ module.exports = [
     lat: 51.4582584,
     address: '72 Lordship Ln, East Dulwich, London SE22 8HF',
     website: ''
-    
   },
   {
     title: 'CAFE: ONE & ALL',
@@ -103,7 +97,6 @@ module.exports = [
     lat: 51.465384,
     address: 'One & All, 28 Peckham Rye, SE15 4JR',
     website: ''
-    
   },
   {
     title: 'SHOP: FOREST',
@@ -113,7 +106,6 @@ module.exports = [
     lat: 51.5217475,
     address: '115 Clerkenwell Rd, EC1R 5BY',
     website: ''
-    
   },
   {
     title: 'RESTAURANT: SUNDAY',
@@ -123,7 +115,6 @@ module.exports = [
     lat: 51.5426679,
     address: '169 Hemingford RdLondon N1 1DA',
     website: ''
-    
   },
   {
     title: 'SHOP: CORNERCOPIA',
@@ -133,7 +124,6 @@ module.exports = [
     lat: 51.4621978,
     address: 'Brixton Village, Unit 37-38 Coldharbour Ln, Brixton, London SW9 8PR',
     website: ''
-    
   },
   {
     title: 'BAR: MOTHER KELLY\'S',
@@ -143,7 +133,6 @@ module.exports = [
     lat: 51.5283630,
     address: '251 Paradise Row Bethnal Green London E2 9BU',
     website: ''
-    
   },
   {
     title: 'SHOP: ARTWORDS',
@@ -153,7 +142,6 @@ module.exports = [
     lat: 51.5262188,
     address: '69 Rivington Street London EC2A 3AY',
     website: ''
-    
   },
   {
     title: 'CAFE: BRUNSWICK EAST BAKEHOUSE',
@@ -163,7 +151,6 @@ module.exports = [
     lat: 51.554761,
     address: 'Brunswick East Bakehouse, Hackney Downs Studios, 17 Amhurst Terrace, E8 2BT',
     website: ''
-    
   },
   {
     title: 'RESTAURANT: 10 GREEK STREET',
@@ -173,6 +160,5 @@ module.exports = [
     lat: 51.5144593,
     address: '10 Greek Street, London W1D 4DH',
     website: ''
-    
   }      
 ]

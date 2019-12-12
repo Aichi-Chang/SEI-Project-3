@@ -33,11 +33,12 @@ function createComment(req, res) {
     .findById(req.params.id)
     .populate('comment.user')
     .then(current => {
-      if (!current) return res.status(404).json({ message: 'article Not Found' })
+      if (!current) return res.status(404).json({ message: 'Article Not Found' })
       
       current.comments.push(req.body)
-      
-      res.status(201).json({ message: 'Comment Added' })
+
+      res.status(201).json(current.comments)
+
       return current.save()
     })
     .catch(err => console.log(err))
@@ -46,18 +47,17 @@ function createComment(req, res) {
 
 //DELETE comment
 function removeComment(req, res) {
-  req.body.user = req.currentUser
   Current
     .findById(req.params.id)
     .then(current => {
-      if (!current) return res.status(404).json({ message: 'articleNot Found' })
+      if (!current) return res.status(404).json({ message: 'ArticleNot Found' })
       
       const commentById = current.comments.id(req.params.commentId)
       commentById.remove()
-
-      res.status(200).json({ message: 'Comment Deleted' })
       return current.save()
     })
+    .then(current => Current.populate(current, 'user comments.user'))
+    .then(current => res.json(current))
     .catch(err => console.log(err))
 }
 

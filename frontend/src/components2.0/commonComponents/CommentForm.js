@@ -4,12 +4,18 @@ import axios from 'axios'
 
 
 
-const CommentForm = ({ url }) => {
+const CommentForm = ({ url, updateData, data }) => {
   const [formData, setFormData] = useState('')
   const [errors, setErrors] = useState({
     errors: []
   })
 
+  // function getcomment(){
+  //   axios.get(comment)
+  //   .then((response)=>setFormData(response))
+  // }
+
+  // useEffect(getcomment, [])
 
   function handleChange(e) {
     setFormData(e.target.value)
@@ -21,27 +27,34 @@ const CommentForm = ({ url }) => {
     axios.post( url , { content: formData }, {
       headers: { Authorization: `Bearer ${Auth.getToken()}` }
     })
-      .then(() => setFormData(''))
+      .then(response => {
+        const newData = { ...data }
+        newData.comments = response.data 
+        updateData(newData)
+        setFormData('')
+        // getcomment()
+      })
       .catch(err => setErrors({ ...err, errors: err.data }))
   }
+  
 
 
   return (
     <div>
-      {/* <h6>Hi! {`${Auth.getUser().username}`}, What is in your mind?</h6> */}
-      <form onSubmit={(e) => handleSubmit(e)}>
+      {Auth.isAuthenticated() && <h6>Hi {`${Auth.getUser().username}`}, what's on your mind?</h6>}
+      {Auth.isAuthenticated() && <form onSubmit={(e) => handleSubmit(e)}>
         <textarea
           onChange={(e) => handleChange(e)}
-          className="form-control"
+          className="name-bar form-control"
           placeholder="Your Comment"
           value={formData}
           name="content"
           rows="5"
-        />
-        <button>
+        /><br></br>
+        <button className="comment-bar">
           Send Comment
         </button>
-      </form>
+      </form>}
     </div>
 
   )

@@ -21,6 +21,7 @@ const SingleMusic = (props) => {
     axios.delete(`/api/culture-music/${props.match.params.id}/comments/${e.target.id}`, {
       headers: { Authorization: `Bearer ${Auth.getToken()}` }
     })
+      .then(res => setData(res.data)) 
   }
 
   // render() {
@@ -54,6 +55,8 @@ const SingleMusic = (props) => {
      
       <CommentForm 
         url={`/api/culture-music/${props.match.params.id}/comments`}
+        updateData={setData}
+        data={data}
       />
 
       <div className='columns'>

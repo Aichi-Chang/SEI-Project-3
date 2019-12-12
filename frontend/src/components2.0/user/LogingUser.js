@@ -31,7 +31,7 @@ const Login = (props) => {
         Auth.setUser(res.data.user)
         // console.log(res.data.token)
         console.log(Auth.getUser())
-        props.history.push('/communities')
+        props.history.push('/')
       })
       .catch(err => setErrors({ ...errors, errors: err.data }))
   }

@@ -14,7 +14,7 @@ const cultureFSchema = new mongoose.Schema({
   summary: { type: String },
   year: { type: Number },
   image: { type: String },
-  rating: { type: Number, min: 1, max: 5 },
+  rating: { type: String },
   user: { type: mongoose.Schema.ObjectId, ref: 'User', require: true },
   comments: [ commentSchema ]
 }, {

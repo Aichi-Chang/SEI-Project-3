@@ -16,7 +16,7 @@ const cultureMSchema = new mongoose.Schema({
   year: { type: Number },
   artist: { type: String },
   summary: { type: String },
-  rating: { type: Number, min: 1, max: 5 },
+  rating: { type: String },
   user: { type: mongoose.Schema.ObjectId, ref: 'User', require: true },
   comments: [ commentSchema ]
 }, {

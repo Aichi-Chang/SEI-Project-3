@@ -21,6 +21,7 @@ const SingleBooks = (props) => {
     axios.delete(`/api/culture-books/${props.match.params.id}/comments/${e.target.id}`, {
       headers: { Authorization: `Bearer ${Auth.getToken()}` }
     })
+      .then(res => setData(res.data)) 
   }
 
   // render() {
@@ -53,6 +54,8 @@ const SingleBooks = (props) => {
 
       <CommentForm 
         url={`/api/culture-books/${props.match.params.id}/comments`}
+        updateData={setData}
+        data={data}
       />
 
       <div className='columns'>
@@ -60,7 +63,7 @@ const SingleBooks = (props) => {
           {data.comments.map((comment) => 
             <div className="is-half" 
               key={comment._id} > 
-              <div>{comment.content}</div>
+              <div className="commentmessage">{comment.content}</div>
               <br />
               {/* <div>from {`${Auth.getUser().username}`}</div> */}
               <button className="delete" id={comment._id} onClick={(e) => handleDelete(e)}></button> 
@@ -74,6 +77,5 @@ const SingleBooks = (props) => {
   </div>
 
 }
-
 
 export default SingleBooks
