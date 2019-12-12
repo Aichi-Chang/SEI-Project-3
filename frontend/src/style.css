@@ -1,6 +1,7 @@
 
 html {
   font-family: 'Bebas Neue', cursive;
+
 }
 
 body {
@@ -19,11 +20,23 @@ body {
   
 }
 
+#root {
+  height: 100vh;
+}
+
 .titleTwo {
 font-size: 30px;
 margin-bottom: 20px;
 }
 
+.hero {
+  font-family: 'Bebas Neue', cursive;
+  height: 100vh;
+}
+
+.sc-bwzfXH {
+  height: 100vh;
+}
 
 /* navbar  */
 

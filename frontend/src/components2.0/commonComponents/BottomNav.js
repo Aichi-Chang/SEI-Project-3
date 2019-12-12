@@ -11,7 +11,7 @@ const BottomNav = () => (
       <div className="navbar-menu is-active has-text-black is-size-4">
         <div className="navbar-start">
           <div className="navbar-item">
-            <Link className='black-link' to="/">Home</Link>
+            <Link className='black-link' to="/">About</Link>
           </div>
           <div className="navbar-item">
             <Link className='black-link' to={'/clothing'}>Clothing</Link>

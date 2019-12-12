@@ -7,6 +7,7 @@ import Auth from './lib/auth'
 // import Main from './components/Main'
 
 
+import Home from './components2.0/commonComponents/Home'
 //culture
 import CultureFilms from './components2.0/culture/cultureFilms'
 import CultureSingleFilms from './components2.0/culture/cultureSingleFilms'
@@ -43,7 +44,7 @@ const App = () => {
     <BottomNav />
 
     <Switch>
-      {/* <Route exact path= '/' component={Home} /> */}    
+      <Route exact path= '/' component={Home} />    
       <Route exact path= '/clothing' component={ClothesListing} />
       <Route exact path= '/clothing/:id' component={SingleClothing} /> 
       <Route exact path= '/communities' component={CommunityListing} />
