@@ -4,12 +4,18 @@ import axios from 'axios'
 
 
 
-const CommentForm = ({ url }) => {
+const CommentForm = ({ url, updateData, data }) => {
   const [formData, setFormData] = useState('')
   const [errors, setErrors] = useState({
     errors: []
   })
 
+  // function getcomment(){
+  //   axios.get(comment)
+  //   .then((response)=>setFormData(response))
+  // }
+
+  // useEffect(getcomment, [])
 
   function handleChange(e) {
     setFormData(e.target.value)
@@ -21,9 +27,16 @@ const CommentForm = ({ url }) => {
     axios.post( url , { content: formData }, {
       headers: { Authorization: `Bearer ${Auth.getToken()}` }
     })
-      .then(() => setFormData(''))
+      .then(response => {
+        const newData = { ...data }
+        newData.comments = response.data 
+        updateData(newData)
+        setFormData('')
+        // getcomment()
+      })
       .catch(err => setErrors({ ...err, errors: err.data }))
   }
+  
 
 
   return (

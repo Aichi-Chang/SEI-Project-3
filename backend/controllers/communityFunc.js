@@ -70,16 +70,18 @@ function createComment(req, res) {
       
       community.comments.push(req.body)
       
-      res.status(201).json({ message: 'Comment Added' })
-      return community.save()
+      res.status(201).json(community.comments)
+      
+      
+      return  community.save()
     })
     .catch(err => console.log(err))
 }
 
 
+
 //DELETE comment
-function removeComment(req, res) {
-  req.body.user = req.currentUser
+function removeComment(req, res, next) {
   Community
     .findById(req.params.id)
     .then(community => {
@@ -87,11 +89,11 @@ function removeComment(req, res) {
       
       const commentById = community.comments.id(req.params.commentId)
       commentById.remove()
-
-      res.status(200).json({ message: 'Comment Deleted' })
       return community.save()
     })
-    .catch(err => console.log(err))
+    .then(community =>  Community.populate(community, 'user comments.user'))
+    .then(community => res.json(community))
+    .catch(next)
 }
 
 
