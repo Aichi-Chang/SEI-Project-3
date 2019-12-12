@@ -7,7 +7,7 @@ const ClothingCard = ({ article }) => (
   <div className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
     <div className="card">
       <div className="card-image">
-        <figure className="image is-1by1">
+        <figure className="image is-2by6">
           <img src={article.image} alt="Placeholder image"/>
         </figure>
       </div>

@@ -33,25 +33,23 @@ const SingleFilms = (props) => {
       <div className="columns is-multiline">
         <div className="column is-half-tablet">
           <p className="title">
-            {this.state.film.title}
+            {data.title}
           </p>
           <p className="subtitle">
-            {this.state.film.year}
+            {data.year}
           </p>
           <p>
-            {this.state.film.summary}
+            {data.summary}
           </p>
           <p>
-          Vault Rating: {this.state.film.rating}
+          Vault Rating: {data.rating}
           </p>
         </div>
         <div className="column is-half-tablet">
-          <img src={this.state.film.image} />
+          <img src={data.image} />
         </div>
       </div>
-      <div className="column is-half-tablet">
-        <img src={data.image} />
-      </div>
+    
 
       <CommentForm 
         url={`/api/culture-films/${props.match.params.id}/comments`}

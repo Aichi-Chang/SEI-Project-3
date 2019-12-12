@@ -24,7 +24,7 @@ const SingleMusic = (props) => {
   }
 
   // render() {
-  //   console.log(this.state.musicAlbum)
+  //   console.log(data)
   //   if (this.state.err === 404) {
   //     return <h1>404</h1>
   //   }
@@ -33,28 +33,25 @@ const SingleMusic = (props) => {
       <div className="columns is-multiline">
         <div className="column is-half-tablet">
           <p className="title">
-            {this.state.musicAlbum.album}
+            {data.album}
           </p>
           <p className="subtitle">
-            {this.state.musicAlbum.artist}
+            {data.artist}
           </p>
           <p>
-            {this.state.musicAlbum.year}
+            {data.year}
           </p>
           <p>
-            {this.state.musicAlbum.summary}
+            {data.summary}
           </p>
-          <p> Vault Rating: {this.state.musicAlbum.rating}
+          <p> Vault Rating: {data.rating}
           </p>
         </div>
         <div className="column is-half-tablet">
-          <img src={this.state.musicAlbum.image} />
+          <img src={data.image} />
         </div>
       </div>
-      <div className="column is-half-tablet">
-        <img src={data.image} />
-      </div>
-
+     
       <CommentForm 
         url={`/api/culture-music/${props.match.params.id}/comments`}
       />

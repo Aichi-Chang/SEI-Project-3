@@ -1,27 +1,130 @@
-.nav-wrapper nav {
-  background-color: grey;
+
+html {
+  font-family: 'Bebas Neue', cursive;
 }
 
-section.cultureHome.hero.is-fullheight {
-  background-image: url('../src/images/cultureImg/music/gig.jpeg');
-  background-size: cover;
+body {
+  padding-bottom: 100px;
+}
+
+/* header */
+
+.titleOne {
+  font-size: 60px;
+}
+.titleOne, .titleTwo {
+  font-family: 'Bebas Neue', cursive;
+  color: black;
+  text-align: center;
+  
+}
+
+.titleTwo {
+font-size: 30px;
+margin-bottom: 20px;
+}
+
+
+/* navbar  */
+
+.navbar-item {
+  text-decoration: none;
+  font-family: 'Bebas Neue', cursive;
+  margin-bottom: 10px;
+}
+
+div.navbar-item:hover {
+  background-color: black;
+  transition: 0.5s;
+}
+
+.black-link:hover {
+  color: white;
+  transition: 0.5s;
+}
+
+/* .black-link:hover {
+  color: black;
+} */
+a{
+  color: rgb(65, 64, 64);
+}
+
+a.black-link.navbar-link:hover {
+background-color: black;
+color: white;
+transition: 0.5s;
 }
 
 .vaultlogo img {
-    transform: scale(5);
-    margin: 2px;
-    margin-top:6px;
+    transform: scale(3);
+    margin-bottom: 20px;
+    margin-right: -10px;
+    margin-left: 20px;
     }
     
+    div.buttons.navbar-item {
+      margin-left: 200px;
+    }
+  
+  .buttons.navbar-item:hover {
+    background-color: white;
+  }
 
-     .img:hover {
+  .button.is-white {
+    border-radius: 2px;
+  }
+  .button.is-white:hover {
+  color: white;
+  background-color: black;
+  margin-bottom: 5px;
+  transform: scale(1.1);
+  }
+
+  /* individual image hover animation */
+
+     /* .img:hover {
       transform: scale(1.1);
-      }
+      } */
     
-      .img {
-        transition: all 0.5s;
-        width: 200px;
+      /* .img {
+        transition: 0.5s; */
+        /* width: 200px;
         height: 280px;
-        margin-bottom: 5px;
+        margin-bottom: 5px; */
+      /* } */
+     
+
+
+      /*aichi's comment boxes */
+      .name-bar.form-control {
+      width: 400px;
+      border: 4px solid, black;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      border-radius: 10px;
+
+      } 
+      .comment-bar.form-control {
+        width: 400px;
+        /* height: 200px; */
+        border: 4px solid, black;
+        border-radius: 10px;
       }
+
+      .btn.btn-primary {
+       background-color: black;
+       color: white;
+       font-size: 12px;
+       padding: 10px;
+       border-radius: 5px;
+       font-weight: bold;
+      }
+
+      .btn.btn-primary:hover {
+      /* height: 45px;
+      width: 90px; */
+      font-size: 14px;
+      }
+      
     

@@ -24,7 +24,7 @@ const SingleBooks = (props) => {
   }
 
   // render() {
-  //   console.log(this.state.book)
+  //   console.log(data)
   //   if (this.state.err === 404) {
   //     return <h1>404</h1>
   //   }
@@ -33,25 +33,23 @@ const SingleBooks = (props) => {
       <div className="columns is-multiline">
         <div className="column is-half-tablet">
           <p className="title">
-            {this.state.book.title}
+            {data.title}
           </p>
           <p className="subtitle">
-            {this.state.book.author}
+            {data.author}
           </p>
           <p>
-            {this.state.book.review}
+            {data.review}
           </p>
           <p>
-          Vault Rating: {this.state.book.rating}
+          Vault Rating: {data.rating}
           </p>
         </div>
         <div className="column is-half-tablet">
-          <img src={this.state.book.image} />
+          <img src={data.image} />
         </div>
       </div>
-      <div className="column is-half-tablet">
-        <img src={data.image} />
-      </div>
+    
 
       <CommentForm 
         url={`/api/culture-books/${props.match.params.id}/comments`}

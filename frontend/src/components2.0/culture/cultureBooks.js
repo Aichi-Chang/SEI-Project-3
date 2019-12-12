@@ -23,6 +23,8 @@ class CultureBooks extends React.Component {
   render() {
     console.log(this.state.cultureBData)
     return <div className="section">
+      <h1 className="titleOne">After a good read?</h1>
+      <h2 className="titleTwo"> Our Head of Culture, Sonia, shares her must-reads..</h2>
       <div className="container">
         <div className="columns is-mobile is-multiline">
           {this.state.cultureBData.map((book, i) => {
