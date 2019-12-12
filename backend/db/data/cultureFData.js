@@ -192,7 +192,7 @@ const cultureFData = (user) => {
   {
     title: 'The Truman Show',
     year: 1998,
-    image: 'https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SY1000_CR0,0,704,1000_AL_.jpg',
+    image: 'https://m.media-amazon.com/images/M/MV5BMDIzODcyY2EtMmY2MC00ZWVlLTgwMzAtMjQwOWUyNmJjNTYyXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SY1000_SX674_AL_.jpg',
     summary: 'The Truman Show epitomizes strong and original storytelling on screen. This film is emotionally engaging, didactic, witty, dramatic and very unique. For those unfamiliar with the concept, Truman Burbank has never left his ideal home town of Sea Haven. What he doesn\'t know is that his entire environment is a materialized set and he is the ignorant star of a reality TV show of epic proportions. Taking this entirely original concept, writer Andrew Niccol and director Peter Wier take the viewer into territory uncharted by anything in film history. Thus, the plot is entirely unpredictable but still flows along expertly. The tightness of the screenplay and the immaculate pacing of Peter Wier contribute largely to this film\'s brilliance. The cinematography has a reality TV feel that is clever but never intrusive. The shot selection is of the highest quality, particularly in the movie\'s final sequence. This film is an absolute gem. It effortlessly combines everything a classic film should have. It has comedy, drama, strong character development, atmosphere, originality, superb visuals, a superb score, tight writing, raises interesting moral questions as well as providing insight into the human condition.',
     rating: 5,
     user: user[0],

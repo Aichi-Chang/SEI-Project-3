@@ -7,6 +7,8 @@ const CommunityListing = () => {
   // console.log(data)
   return (
     <div className="section">
+    <h1 className="titleOne">After cool places to check out?</h1>
+      <h2 className="titleTwo"> Our Head of Community, Aichi, shares her hot spots..</h2>
       <div className="container">
         <div className="columns is-mobile is-multiline">
           {data.map((community, index) => {

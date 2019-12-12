@@ -22,6 +22,8 @@ class CultureMusic extends React.Component {
   render() {
     console.log(this.state.cultureMData)
     return <div className="section">
+    <h1 className="titleOne">What should you be listening to?</h1>
+      <h2 className="titleTwo"> Our Head of Current, Sonia, gives us the low down..</h2>
       <div className="container">
         <div className="columns is-mobile is-multiline">
           {this.state.cultureMData.map((musicAlbum, i) => {

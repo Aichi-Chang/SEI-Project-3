@@ -24,7 +24,7 @@ module.exports = [
     author: 'Compare the Market'
   },
   {
-    title: '18 Perfectly Fake Houseplants That Look Real’',
+    title: '18 Perfectly Fake Houseplants That Look Real',
     image: '/images/currentImg/Article-5.jpg',
     text: 'Plant-filled homes are taking over Instagram these days. There is even an account and hashtag (#houseplantclub) for overly enthusiastic folks who cannot get enough greenery in their lives',
     author: 'Amanda Pena - the Huffington Post'

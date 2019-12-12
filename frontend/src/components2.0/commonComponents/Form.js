@@ -97,7 +97,7 @@ export default class CommentForm extends Component {
             <input
               onChange={this.handleFieldChange}
               value={this.state.comment.name}
-              className="form-control"
+              className="name-bar form-control"
               placeholder="😎 Your Name"
               name="name"
               type="text"
@@ -108,7 +108,7 @@ export default class CommentForm extends Component {
             <textarea
               onChange={this.handleFieldChange}
               value={this.state.comment.message}
-              className="form-control"
+              className="comment-bar form-control"
               placeholder="🤬 Your Comment"
               name="message"
               rows="5"
