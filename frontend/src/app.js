@@ -38,10 +38,11 @@ const App = () => {
 
 
   return <BrowserRouter>
+
+    <BottomNav />
+
     <Switch>
-      {/* <Route exact path= '/' component={Home} /> */}
-      <Route exact path='/' component={BottomNav} />
-     
+      {/* <Route exact path= '/' component={Home} /> */}    
       <Route exact path= '/clothing' component={ClothesListing} />
       <Route exact path= '/clothing/:id' component={SingleClothing} /> 
       <Route exact path= '/communities' component={CommunityListing} />
