@@ -28,7 +28,7 @@ class CurrentSingle extends React.Component {
       <div className="container">
         <div className="columns is-multiline">
           <div className="column is-half-tablet">
-            <p className="title">
+            <p className="currentOne-title">
               {this.state.current.title}
             </p>
             <p className="subtitle">

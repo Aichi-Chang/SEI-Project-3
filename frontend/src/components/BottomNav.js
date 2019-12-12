@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 const BottomNav = () => (
   // <nav className="navbar is-fixed-bottom">
   <div className="navbar has-background-white is-fixed-bottom">
+    <Link className="vaultlogo navbar-item" to="/"><img src='../images/currentImg/Logo/Vault-Logo-Black.jpg' ></img></Link>
     <div className="container">
       <div className="navbar-brand">
-        <Link className="vaultlogo navbar-item" to="/"><img src='../images/currentImg/Logo/Vault-Logo-Black.jpg' ></img></Link>
       </div>
       <div className="navbar-menu is-active has-text-black is-size-4">
         <div className="navbar-start">
@@ -20,7 +20,7 @@ const BottomNav = () => (
             <Link className='black-link' to={'/communities'}>Community</Link>
           </div>
           <div className="navbar-item">
-            <Link className='black-link' to={'/currents'}>Currents</Link>
+            <Link className='black-link' to={'/currents'}>Current</Link>
           </div>
   
           <div className="navbar-item has-dropdown-up is-hoverable">

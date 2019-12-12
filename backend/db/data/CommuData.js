@@ -47,6 +47,15 @@ module.exports = [
     
   },
   {
+    title: 'RESTUARANT: SKETCH LONDON',
+    image: 'https://i.imgur.com/AYu220n.jpg',
+    text: 'SKETCH LONDON is located in lovely Mayfair. This must be what it looks like inside a candyfloss machine. I mean, if that candyfloss machine had 91 colourful David Shrigley artworks chucked in for good measure, as sketch does. Head here for a classic afternoon tea, from £59pp, served 11.30am – 4.30pm seven days a week, or their a la carte dinner option, about £70pp, served until 2am for all you night owls. ',
+    lng: -0.141800,
+    lat: 51.512530,
+    address: '9 Conduit St, Mayfair, London W1S 2XG',
+    website: ''
+  },
+  {
     title: 'BAR: FRANK\'S CAFE',
     image: 'https://i.imgur.com/k4jqCne.png',
     text: 'Not many neighbourhoods can claim a multi-storey car park as their most-valued asset. And yet, Frank\'s Café is still probably the only place in the area a non-Peckhamite could name. With Frank\'s also came Bold Tendencies, an annual sculpture show on top of the same car park, which firmly established Peckham as a thriving site on London\'s art scene. The lower levels have also hosted classical concerts, including the Proms (apparently the concrete ceilings are excellent for acoustics). On the ground floor is the retro Peckhamplex cinema; scruffy but locally loved, it sells tickets for £4.99 – to any film, all day long.',
