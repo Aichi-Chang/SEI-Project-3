@@ -28,7 +28,7 @@ const CommentForm = ({ url }) => {
 
   return (
     <div>
-      <h6>Hi! {`${Auth.getUser().username}`}, What is in your mind?</h6>
+      {/* <h6>Hi! {`${Auth.getUser().username}`}, What is in your mind?</h6> */}
       <form onSubmit={(e) => handleSubmit(e)}>
         <textarea
           onChange={(e) => handleChange(e)}

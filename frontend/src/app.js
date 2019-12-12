@@ -30,7 +30,7 @@ import RegisterUser from './components2.0/user/RegisterUser'
 import LoginUser from './components2.0/user/LogingUser'
 // import Home from './components2.0/commonComponents/Home'
 
-import BottomNav from './components/BottomNav' 
+import BottomNav from './components2.0/commonComponents/BottomNav' 
 import './style.css'
 
 
