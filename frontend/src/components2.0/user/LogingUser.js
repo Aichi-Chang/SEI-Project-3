@@ -28,8 +28,9 @@ const Login = (props) => {
     axios.post('/api/login', data)
       .then(res => {
         Auth.setToken(res.data.token)
+        Auth.setUser(res.data.user)
         // console.log(res.data.token)
-        // why do we push this inside then?? but not in anoteher then???
+        console.log(Auth.getUser())
         props.history.push('/communities')
       })
       .catch(err => setErrors({ ...errors, errors: err.data }))

@@ -88,14 +88,11 @@ function removeComment(req, res) {
       const commentById = community.comments.id(req.params.commentId)
       commentById.remove()
 
-      res.status(410).json({ message: 'Comment Deleted' })
+      res.status(200).json({ message: 'Comment Deleted' })
       return community.save()
     })
     .catch(err => console.log(err))
 }
-
-
-
 
 
 
