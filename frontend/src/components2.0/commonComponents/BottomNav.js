@@ -51,6 +51,9 @@ const BottomNav = () => (
               <Link className="button is-white" to={'/login'}>
             Log in
               </Link>
+              <Link className="button is-white" to={'/logout'}>
+            Log out
+              </Link>
             </div>
           </div>
         </div>

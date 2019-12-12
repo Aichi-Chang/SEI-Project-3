@@ -47,7 +47,7 @@ module.exports = [
     
   },
   {
-    title: 'RESTUARANT: SKETCH LONDON',
+    title: 'RESTAURANT: SKETCH LONDON',
     image: 'https://i.imgur.com/AYu220n.jpg',
     text: 'SKETCH LONDON is located in lovely Mayfair. This must be what it looks like inside a candyfloss machine. I mean, if that candyfloss machine had 91 colourful David Shrigley artworks chucked in for good measure, as sketch does. Head here for a classic afternoon tea, from £59pp, served 11.30am – 4.30pm seven days a week, or their a la carte dinner option, about £70pp, served until 2am for all you night owls. ',
     lng: -0.141800,

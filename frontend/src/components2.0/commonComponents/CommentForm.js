@@ -28,20 +28,20 @@ const CommentForm = ({ url }) => {
 
   return (
     <div>
-      {/* <h6>Hi! {`${Auth.getUser().username}`}, What is in your mind?</h6> */}
-      <form onSubmit={(e) => handleSubmit(e)}>
+      {Auth.isAuthenticated() && <h6>Hi {`${Auth.getUser().username}`}, what's on your mind?</h6>}
+      {Auth.isAuthenticated() && <form onSubmit={(e) => handleSubmit(e)}>
         <textarea
           onChange={(e) => handleChange(e)}
-          className="form-control"
+          className="name-bar form-control"
           placeholder="Your Comment"
           value={formData}
           name="content"
           rows="5"
-        />
-        <button>
+        /><br></br>
+        <button className="comment-bar">
           Send Comment
         </button>
-      </form>
+      </form>}
     </div>
 
   )

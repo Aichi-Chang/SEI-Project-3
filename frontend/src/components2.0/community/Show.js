@@ -53,7 +53,7 @@ const SingleCommunity = (props) => {
                 key={comment._id} > 
                 <div>{comment.content}</div>
                 <br />
-                <div>from {`${Auth.getUser().username}`}</div>
+                {/* <div>from {`${Auth.getUser().username}`}</div> */}
                 <button className="delete" id={comment._id} onClick={(e) => handleDelete(e)}></button> 
               </div>
             )}

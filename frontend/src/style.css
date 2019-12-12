@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  padding-bottom: 100px;
+  padding-bottom: 180px;
 }
 
 /* header */
@@ -102,29 +102,34 @@ transition: 0.5s;
       border: 4px solid, black;
       margin-top: 10px;
       margin-bottom: 8px;
-      border-radius: 10px;
+      border-radius: 5px;
 
       } 
       .comment-bar.form-control {
         width: 400px;
         /* height: 200px; */
         border: 4px solid, black;
-        border-radius: 10px;
+        border-radius: 5px;
       }
 
-      .btn.btn-primary {
+      button.comment-bar {
        background-color: black;
        color: white;
        font-size: 12px;
        padding: 10px;
        border-radius: 5px;
        font-weight: bold;
+     
       }
 
-      .btn.btn-primary:hover {
+      button.comment-bar:hover {
       /* height: 45px;
       width: 90px; */
-      font-size: 14px;
+      /* padding: 5px; */
+      /* font-size: 14px; */
+      transform: scale(1.1);
       }
       
-    
+      .commentmessage {
+      margin-top: 20px;
+      }
