@@ -21,6 +21,7 @@ const SingleBooks = (props) => {
     axios.delete(`/api/culture-books/${props.match.params.id}/comments/${e.target.id}`, {
       headers: { Authorization: `Bearer ${Auth.getToken()}` }
     })
+      .then(res => setData(res.data)) 
   }
 
   // render() {
@@ -53,6 +54,8 @@ const SingleBooks = (props) => {
 
       <CommentForm 
         url={`/api/culture-books/${props.match.params.id}/comments`}
+        updateData={setData}
+        data={data}
       />
 
       <div className='columns'>

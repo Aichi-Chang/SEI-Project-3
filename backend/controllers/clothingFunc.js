@@ -76,7 +76,7 @@ function createComment(req, res) {
       
       clothing.comments.push(req.body)
       
-      res.status(201).json({ message: 'Comment Added' })
+      res.status(201).json(clothing.comments)
       return clothing.save()
     })
     .catch(err => console.log(err))
@@ -89,14 +89,14 @@ function removeComment(req, res) {
   Clothing
     .findById(req.params.id)
     .then(clothing => {
-      if (!clothing) return res.status(404).json({ message: 'Item Not Found' })
+      if (!clothing) return res.status(404).json({ message: 'Article Not Found' })
       
       const commentById = clothing.comments.id(req.params.commentId)
       commentById.remove()
-
-      res.status(200).json({ message: 'Comment Deleted' })
       return clothing.save()
     })
+    .then(clothing =>  Clothing.populate(clothing, 'user comments.user'))
+    .then(clothing => res.json(clothing))
     .catch(err => console.log(err))
 }
 

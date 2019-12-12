@@ -34,7 +34,7 @@ function createComment(req, res) {
       
       cultureM.comments.push(req.body)
       
-      res.status(201).json({ message: 'Comment Added' })
+      res.status(201).json(cultureM.comments)
       return cultureM.save()
     })
     .catch(err => console.log(err))
@@ -52,9 +52,10 @@ function removeComment(req, res) {
       const commentById = cultureM.comments.id(req.params.commentId)
       commentById.remove()
 
-      res.status(200).json({ message: 'Comment Deleted' })
       return cultureM.save()
     })
+    .then(cultureM =>  CultureM.populate(cultureM, 'user comments.user'))
+    .then(cultureM => res.json(cultureM))
     .catch(err => console.log(err))
 }
 

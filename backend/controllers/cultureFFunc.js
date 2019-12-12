@@ -34,7 +34,7 @@ function createComment(req, res) {
       
       cultureF.comments.push(req.body)
       
-      res.status(201).json({ message: 'Comment Added' })
+      res.status(201).json(cultureF.comments)
       return cultureF.save()
     })
     .catch(err => console.log(err))
@@ -43,7 +43,6 @@ function createComment(req, res) {
 
 //DELETE comment
 function removeComment(req, res) {
-  req.body.user = req.currentUser
   CultureF
     .findById(req.params.id)
     .then(cultureF => {
@@ -51,10 +50,10 @@ function removeComment(req, res) {
       
       const commentById = cultureF.comments.id(req.params.commentId)
       commentById.remove()
-
-      res.status(200).json({ message: 'Comment Deleted' })
       return cultureF.save()
     })
+    .then(cultureF =>  CultureF.populate(cultureF, 'user comments.user'))
+    .then(cultureF => res.json(cultureF))
     .catch(err => console.log(err))
 }
 
