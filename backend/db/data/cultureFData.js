@@ -168,6 +168,15 @@ const cultureFData = (user) => {
     user: user[0],
     comments: [] 
   },
+  {
+    title: 'Napoleon Dynamite',
+    year: 2004,
+    image: 'https://m.media-amazon.com/images/M/MV5BNjYwNTA3MDIyMl5BMl5BanBnXkFtZTYwMjIxNjA3._V1_.jpg',
+    summary: 'If you like dry or dark humor, you should get a big kick out of this movie. I know I did. If you are between 12-20 you might even like it more because this deals with high school kids primarily. However, there are some adults in here who play key roles, too. The teens and the adults have a couple of things in common: they are nerds and weird people and they are all hilarious. They also are unlike a cast of characters you have seen in any other movie. In other words, this movie is an "original." I didn\'t know any of these actors and I think that helped. It made it even more original, looking at new faces. That begins with the title character, played by Jon Heder. A white kid in Idaho with a afro haircut, over-sized glasses, moon boots and an unpredictable and low-key personality unlike anyone I\'ve ever seen in other films. Even though he\'s pictured as a huge nerd, he surprises you all the time. Just when you think you have this kid figured out, he does something unexpected. Whatever, he\'s fun to watch and hear throughout the movie. Suffice to say "Napoleon" and about everyone in this film is totally whacked and all of them - male, female, young, old, good and bad people are extremely entertaining. A lot of the humor is visual, meaning the looks and reactions on these character\'s faces and the weird deadpan lines they deliver. Are there stereotypes in here? Yes, like the bimbo, prettiest girl in school running for class president , and her stupid, macho boyfriend, but most of the people were pretty unique. If you like absurd humor, this is your cup of tea, and you don\'t have to be a teen to enjoy this. Hey, I\'m old enough to be Napoleon\'s grandfather and I laughed my butt off from the beginning to the end of this unconventional film.',
+    rating: 5,
+    user: user[0],
+    comments: [] 
+  },
 
   {
     title: 'The Godfather',
