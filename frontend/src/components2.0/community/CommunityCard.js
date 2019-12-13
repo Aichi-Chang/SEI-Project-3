@@ -10,11 +10,11 @@ import 'bulma'
 // })
 
 const ClothingCard = ({ article }) => (
-  <div className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
+  <div className="singleImage column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
     <div className="card">
       <div className="card-image">
         <figure className="image is-2by6">
-          <img src={article.image} alt="Placeholder image"/>
+          <Link to={`/communities/${article._id}`}><img src={article.image} alt="Placeholder image"/></Link> 
         </figure>
       </div>
       <div className="card-content">

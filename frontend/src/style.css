@@ -5,7 +5,11 @@ html {
 }
 
 body {
-  padding-bottom: 180px;
+  padding-bottom: 150px;
+}
+
+.section {
+  padding-bottom: 200px;
 }
 
 /* header */
@@ -56,9 +60,7 @@ div.navbar-item:hover {
   transition: 0.5s;
 }
 
-/* .black-link:hover {
-  color: black;
-} */
+
 a{
   color: rgb(65, 64, 64);
 }
@@ -96,18 +98,37 @@ transition: 0.5s;
 
   /* individual image hover animation */
 
-     /* .img:hover {
+  .singleImage.column {
+    padding: 10px;
+  }
+     .singleImage:hover {
       transform: scale(1.1);
-      } */
+      } 
     
-      /* .img {
-        transition: 0.5s; */
+      .singleImage {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        transition: 0.5s; 
         /* width: 200px;
-        height: 280px;
-        margin-bottom: 5px; */
-      /* } */
+        height: 280px; */
+        margin-bottom: 5px; 
+       }
      
-
+       .singleImageBooks:hover {
+        transform: scale(1.1);
+        } 
+      
+        .singleImageBooks {
+          display: flex;
+          justify-content: space-between;
+          padding: 15px;
+          transition: 0.5s; 
+          width: 290px;
+          height: 360px;
+          /* margin-bottom: 5px;  */
+         }
+ 
 
       /*aichi's comment boxes */
       .name-bar.form-control {
