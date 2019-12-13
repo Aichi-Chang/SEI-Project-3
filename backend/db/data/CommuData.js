@@ -5,13 +5,8 @@ module.exports = [
     text: 'Up on its main thoroughfare, Church Street, Stokie’s cafes are mostly depressingly behind the curve: all huge frothing cappuccinos and heavy bought-in cakes. So all hail the lovely Esters, on a quiet side street, for its slick contemporary interior and impeccable modern coffee. Owners Nia Burr and Jack Lloyd-Jones met working at Fernandez & Wells before taking over the reins at this tucked-away little gem. Go for its imaginative ever-changing menu (French toast with fragolina grapes and whipped ricotta, for example) and its magnificent cakes.',
     lng: -0.078388,
     lat: 51.560016,
-<<<<<<< HEAD
     address: 'Esters, 55 Kynaston Road, N16 0EB',
     website: 'http://www.estersn16.com/'
-=======
-    address: '55 Kynaston Road London N16 0EB',
-    website: ''
->>>>>>> development
   },
   {
     title: 'SHOP: BYO Plastic Free Shop',
@@ -19,13 +14,8 @@ module.exports = [
     text: 'BYO - Bring Your Own, is a gorgeous plastic-free shop. Conscious residents of South East London will now be able to shop plastic-free by bringing their own reusable containers to BYO and filling it with the amount you need of each item - helping customers to reduce their environmental footprint and at the same time cut down on food waste. Shoppers can choose from a variety of quality organic grains, pulses, nuts, dried fruits, pickles, spices and vegan chocolate buttons! You can also choose oils like Argan, sesame and chilli olive oil as well as household goods, including cleaning products and body care essentials all without the plastic wrapping. BYO also sell a selection of reusable items like eco coffee cups and water bottles. ',
     lng: -0.056797,
     lat: 51.466056,
-<<<<<<< HEAD
     address: '147 Evelina Rd, London SE15 3HB',
     website: 'https://bringyourownuk.com/'
-=======
-    address: '147 Evelina Road London SE15 3HB',
-    website: ''
->>>>>>> development
   },
   {
     title: 'EAT: Regency Café',
@@ -51,13 +41,8 @@ module.exports = [
     text: 'Bun House is located in Chinatown and is inspired by old-school Hong Kong diners – come here for stacks of steamed pork or veggie and mushroom buns. Whatever you do, don’t miss out on the sensational oozing liquid-custard buns. With takeaway available, this is a great option for snacks on the go. If you’re eating in, mix your dumplings with more substantial plates such as curry fish balls, garlic basil wings and rice pots, and finish off with some signature Hong Kong egg tarts.',
     lng: -0.12988,
     lat: 51.511776,
-<<<<<<< HEAD
     address: 'Bun House, 26-27 Lisle Street, WC2H 7BA',
     website: 'https://bun.house/'
-=======
-    address: '26-27 Lisle Street London WC2H 7BA',
-    website: ''
->>>>>>> development
   },
   {
     title: 'EAT: Sketch London',
@@ -65,13 +50,8 @@ module.exports = [
     text: 'SKETCH LONDON is located in lovely Mayfair. This must be what it looks like inside a candyfloss machine. I mean, if that candyfloss machine had 91 colourful David Shrigley artworks chucked in for good measure, as sketch does. Head here for a classic afternoon tea, from £59pp, served 11.30am – 4.30pm seven days a week, or their a la carte dinner option, about £70pp, served until 2am for all you night owls. ',
     lng: -0.141800,
     lat: 51.512530,
-<<<<<<< HEAD
     address: '9 Conduit St, Mayfair, London W1S 2XG',
     website: 'https://sketch.london/'
-=======
-    address: '9 Conduit Street Mayfair London W1S 2XG',
-    website: ''
->>>>>>> development
   },
   {
     title: 'DRINK: Frank\'s Café',
@@ -79,13 +59,8 @@ module.exports = [
     text: 'Not many neighbourhoods can claim a multi-storey car park as their most-valued asset. And yet, Frank\'s Café is still probably the only place in the area a non-Peckhamite could name. With Frank\'s also came Bold Tendencies, an annual sculpture show on top of the same car park, which firmly established Peckham as a thriving site on London\'s art scene. The lower levels have also hosted classical concerts, including the Proms (apparently the concrete ceilings are excellent for acoustics). On the ground floor is the retro Peckhamplex cinema; scruffy but locally loved, it sells tickets for £4.99 – to any film, all day long.',
     lng: -0.068213,
     lat: 51.469906,
-<<<<<<< HEAD
     address: 'Frank\'s Café, Bold Tendencies, 7th-10th Floor Multi Storey Car Park, 95A Rye Lane, London SE15 4ST',
     website: 'https://www.facebook.com/frankspeckham/'
-=======
-    address: 'Bold Tendencies 7th-10th Floor Multi Storey Car Park 95A Rye Lane London SE15 4ST',
-    website: ''
->>>>>>> development
   },
   {
     title: 'EAT: Ginger & White',
@@ -93,13 +68,8 @@ module.exports = [
     text: 'The soft-boiled eggs come in little hand-knitted hats at this Hampstead café, perfectly located in the heart of the village. The interior is a lovely white box with stripped back retro-industrial fittings and the clientele is refreshingly varied for the neighbourhood: guys in high-vis as well as the handbag brigade. Prep yourself for a stomp on the Heath with smashed avocado and goat’s cheese on toasted sourdough and a Square Mile flat white at a hidden-away corner table.',
     lng: -0.177779,
     lat: 551.555678,
-<<<<<<< HEAD
     address: 'Ginger & White, 4a-5a Perrin\'s Court, NW3 1QS',
     website: 'http://www.gingerandwhite.com/'
-=======
-    address: '4a-5a Perrin\'s Court London NW3 1QS',
-    website: ''
->>>>>>> development
   },
   {
     title: 'SHOP: Tokyo Bike',
@@ -116,13 +86,8 @@ module.exports = [
     text: 'This modern Japanese new style Izakaya/sushi restaurant and cocktail bar brings an edge to East Dulwich\'s repertoire of homely gastro pubs and wine bars. Both the food and restaurant interior are really nicely presented. Worth visiting for a special night out.',
     lng: -0.0752634,
     lat: 51.4582584,
-<<<<<<< HEAD
     address: '72 Lordship Ln, East Dulwich, London SE22 8HF',
     website: 'http://www.yamamomo.co.uk/'
-=======
-    address: '72 Lordship Lane East Dulwich London SE22 8HF',
-    website: ''
->>>>>>> development
   },
   {
     title: 'EAT: One & All',
@@ -130,13 +95,8 @@ module.exports = [
     text: 'Aware that Peckham’s not exactly a neighbourhood awash with cash, owner Maddy Beevers has put the emphasis very much on affordability at this lovely plywood-decked neighbourhood café; a cup of tea costs a quid and you can pick up a bowl of their flavour-packed fattoush for just £3.50. There’s a pay it forward scheme, which allows you to buy a drink for someone less able to afford it at half price (she’ll pick up the other half). And there’s a clothes swap in the back. The coffee is sourced from Café Feminino, a women farmers’ collective in Peru. And everything about the place is sunny and lovely.',
     lng: -0.06676,
     lat: 51.465384,
-<<<<<<< HEAD
     address: 'One & All, 28 Peckham Rye, SE15 4JR',
     website: 'http://oneandallcafe.com/'
-=======
-    address: '28 Peckham Rye London SE15 4JR',
-    website: ''
->>>>>>> development
   },
   {
     title: 'SHOP: Forest',
