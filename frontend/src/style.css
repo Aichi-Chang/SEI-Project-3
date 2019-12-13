@@ -8,6 +8,10 @@ body {
   padding-bottom: 150px;
 }
 
+.rating {
+  text-align: right;
+}
+
 .section {
   padding-bottom: 200px;
 }
@@ -122,10 +126,12 @@ transition: 0.5s;
         .singleImageBooks {
           display: flex;
           justify-content: space-between;
-          padding: 15px;
+          margin-bottom: 2px;
+          /* padding: 15px; */
+          /* margin: 5px 10px; */
           transition: 0.5s; 
           width: 290px;
-          height: 360px;
+          height: 430px;
           /* margin-bottom: 5px;  */
          }
  

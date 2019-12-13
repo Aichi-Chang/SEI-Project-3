@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Auth from '../../lib/auth'
 import CommentForm from '../commonComponents/CommentForm'
-
+import Rating from '../commonComponents/Rating'
 
 
 const SingleCommunity = (props) => {
@@ -43,6 +43,7 @@ const SingleCommunity = (props) => {
         </div>
         <div className="column is-half-tablet">
           <img src={data.image} />
+          <Rating className="rating" />
         </div>
 
         <CommentForm 
