@@ -1,20 +1,37 @@
 import React, { useState, useEffect } from 'react'
-// import UseAxios from '../commonComponents/UseAxios'
 import axios from 'axios'
+
+import 'mapbox-gl/dist/mapbox-gl.css'
+import Map from '../commonComponents/Map'
+
 import Auth from '../../lib/auth'
 import CommentForm from '../commonComponents/CommentForm'
 
 
 
+
+
 const SingleCommunity = (props) => {
   const [data, setData] = useState({ comments: [] })
+  // const [viewport, setViewport] = useState({
+  //   width: 800,
+  //   height: 500,
+  //   longitude: -0.12743,
+  //   latitude: 51.5074,
+  //   zoom: 14,
+  //   bearing: 0,
+  //   pitch: 0
+  // })
+  // const [event, setEvent] = useState({})
+  // const [info, setInfo] = useState(null)
+  
 
-  // console.log(data)
 
   useEffect(() => {
     fetch(`/api/communities/${props.match.params.id}`)
       .then(res => res.json())
-      .then(res => setData(res))      
+      .then(res => setData(res))
+      // .then(res => setEvent({ event: res }))      
   }, [])
 
 
@@ -63,6 +80,7 @@ const SingleCommunity = (props) => {
               </div>
             )}
             <div className='column'>
+              <Map  data={data}/>
             </div>
           </div>
         </div> 
