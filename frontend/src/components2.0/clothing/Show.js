@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Auth from '../../lib/auth'
 import CommentForm from '../commonComponents/CommentForm'
-
+import Rating from '../commonComponents/Rating'
 
 
 const SingleClothing = (props) => {
@@ -29,7 +29,7 @@ const SingleClothing = (props) => {
     <div className="container">
       <div className="columns is-multiline">
         <div className="column is-half-tablet">
-          <p className="title">
+          <p className="titleFour">
             {data.title}
           </p>
           <p className="subtitle">
@@ -41,6 +41,8 @@ const SingleClothing = (props) => {
         </div>
         <div className="column is-half-tablet">
           <img src={data.image} />
+
+          <Rating className="rating" />
         </div>
 
         <CommentForm 

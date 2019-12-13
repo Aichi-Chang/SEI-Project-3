@@ -24,10 +24,12 @@ class CurrentListing extends React.Component {
       <h1 className="titleOne">What's Current?</h1>
       <h2 className="titleTwo"> Our Head of Current, Sarah, tells us..</h2>
       <div className="container">
-        <div className="columns is-mobile is-multiline">
-          {this.state.currents.map((current, i) => {
-            return <CurrentCards key={i} current={current}/>
-          })}
+        <div className="titleThree">
+          <div className="columns is-mobile is-multiline">
+            {this.state.currents.map((current, i) => {
+              return <CurrentCards key={i} current={current} />
+            })}
+          </div>
         </div>
       </div>
     </div>

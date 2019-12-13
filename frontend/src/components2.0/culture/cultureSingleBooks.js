@@ -3,8 +3,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Auth from '../../lib/auth'
 import CommentForm from '../commonComponents/CommentForm'
-
-
+import CultureRating from '../commonComponents/Rating'
 
 const SingleBooks = (props) => {
   const [data, setData] = useState( { comments: [] })
@@ -33,7 +32,7 @@ const SingleBooks = (props) => {
     <div className="container">
       <div className="columns is-multiline">
         <div className="column is-half-tablet">
-          <p className="title">
+          <p className="titleFour">
             {data.title}
           </p>
           <p className="subtitle">
@@ -48,9 +47,11 @@ const SingleBooks = (props) => {
         </div>
         <div className="column is-half-tablet">
           <img src={data.image} />
+          
         </div>
       </div>
     
+  
 
       <CommentForm 
         url={`/api/culture-books/${props.match.params.id}/comments`}

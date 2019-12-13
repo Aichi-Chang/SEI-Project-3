@@ -22,6 +22,7 @@
     "react-lazy-hero": "^2.0.0",
     "react-map-gl": "^5.1.3",
     "react-router-dom": "^5.1.2",
+    "react-star-rating-component": "^1.4.1",
     "save-dev": "0.0.1-security",
     "styled-components": "^4.4.1",
     "supertest": "^4.0.2",
