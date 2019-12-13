@@ -33,7 +33,7 @@ const SingleMusic = (props) => {
     <div className="container">
       <div className="columns is-multiline">
         <div className="column is-half-tablet">
-          <p className="title">
+          <p className="titleFour">
             {data.album}
           </p>
           <p className="subtitle">

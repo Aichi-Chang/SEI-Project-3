@@ -17,11 +17,24 @@ body {
 .titleOne {
   font-size: 60px;
 }
+
 .titleOne, .titleTwo {
   font-family: 'Bebas Neue', cursive;
   color: black;
   text-align: center;
-  
+}
+
+.titleThree {
+  font-family: 'Bebas Neue', cursive;
+  color: black;
+  text-align: left;
+}
+
+.titleFour {
+  font-family: 'Bebas Neue', cursive;
+  color: black;
+  text-align: left;
+  font-size: 40px;
 }
 
 #root {

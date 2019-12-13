@@ -29,7 +29,7 @@ const SingleClothing = (props) => {
     <div className="container">
       <div className="columns is-multiline">
         <div className="column is-half-tablet">
-          <p className="title">
+          <p className="titleFour">
             {data.title}
           </p>
           <p className="subtitle">
