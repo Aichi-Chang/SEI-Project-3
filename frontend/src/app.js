@@ -8,6 +8,7 @@ import Auth from './lib/auth'
 
 
 import Home from './components2.0/commonComponents/Home'
+import About from './components2.0/About'
 //culture
 import CultureFilms from './components2.0/culture/cultureFilms'
 import CultureSingleFilms from './components2.0/culture/cultureSingleFilms'
@@ -59,6 +60,7 @@ const App = () => {
       <Route path="/culture-books" component={CultureBooks} />
       <Route path="/culture-music/:id" component={CultureSingleMusic} />
       <Route path="/culture-music" component={CultureMusic} />
+      <Route path="/about" component={About} />
       <Route path="/register" component={RegisterUser} />
       <Route path="/login" component={LoginUser} />
     </Switch>

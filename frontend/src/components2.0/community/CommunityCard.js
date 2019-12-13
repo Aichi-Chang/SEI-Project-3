@@ -1,7 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import 'bulma'
-
+// var mapboxgl = require('mapbox-gl/dist/mapbox-gl.js')
+ 
+// mapboxgl.accessToken = 'pk.eyJ1Ijoic2FyYWhmd29vZCIsImEiOiJjazQzOTZlZjEwNTNjM2VvYnVkanNlcG9tIn0.8AxZ5ufHCaZhHQvig95HWg';
+// var map = new mapboxgl.Map({
+//   container: 'article._id',
+//   style: 'mapbox://styles/mapbox/streets-v11'
+// })
 
 const ClothingCard = ({ article }) => (
   <div className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">

@@ -38,6 +38,7 @@ const SingleCurrent = (props) => {
           <p>
             {data.text}
           </p>
+          <p><a href={data.url} target="_blank" rel="noopener noreferrer"><strong>Read More</strong></a> </p>
         </div>
         <div className="column is-half-tablet">
           <img src={data.image} />

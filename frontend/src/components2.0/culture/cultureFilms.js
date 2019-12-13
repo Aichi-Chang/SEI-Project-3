@@ -23,7 +23,7 @@ class CultureFilms extends React.Component {
   render() {
     console.log(this.state.cultureFData)
     return <div className="section">
-  <h1 className="titleOne">After Cult Classics?</h1>
+      <h1 className="titleOne">After Cult Classics?</h1>
       <h2 className="titleTwo"> Our Head of Culture, Sonia, shares her faves..</h2>
       <div className="container">
         <div className="img columns is-mobile is-multiline">

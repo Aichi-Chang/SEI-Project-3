@@ -11,7 +11,7 @@ const BottomNav = () => (
       <div className="navbar-menu is-active has-text-black is-size-4">
         <div className="navbar-start">
           <div className="navbar-item">
-            <Link className='black-link' to="/">About</Link>
+            <Link className='black-link' to={'/about'}>About</Link>
           </div>
           <div className="navbar-item">
             <Link className='black-link' to={'/clothing'}>Clothing</Link>
@@ -51,7 +51,7 @@ const BottomNav = () => (
               <Link className="button is-white" to={'/login'}>
             Log in
               </Link>
-              <Link className="button is-white" to={'/logout'}>
+              <Link className="button is-white" to={'/login'}>
             Log out
               </Link>
             </div>

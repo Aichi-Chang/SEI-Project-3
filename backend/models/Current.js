@@ -12,7 +12,8 @@ const currentSchema = new mongoose.Schema({
   text: { type: String },
   author: { type: String },
   user: { type: mongoose.Schema.ObjectId, ref: 'User' },
-  comments: [ commentSchema ]
+  comments: [ commentSchema ],
+  url: { type: String }
 }, {
   timestamps: true
 })

@@ -49,7 +49,7 @@ const RegisterUser = (props) => {
 
   return <section className="section">
     <div className="container">
-      <div className="title">Register</div>
+      <div className="titleOne">Register</div>
       {/* Form to complete registration */}
       <form className="form" onSubmit={(e) => handleSubmit(e)}>
         {/* We use bulma field, label and control classes for nice forms */}
@@ -61,6 +61,7 @@ const RegisterUser = (props) => {
             <input
               onChange={(e) => handleChange(e)}
               type="text"
+              required={true}
               name="email"
               className="input"
             />
@@ -77,6 +78,7 @@ const RegisterUser = (props) => {
             <input
               onChange={(e) => handleChange(e)}
               type="text"
+              required={true}
               name="username"
               className="input"
             />
@@ -93,6 +95,7 @@ const RegisterUser = (props) => {
             <input
               onChange={(e) => handleChange(e)}
               type="text"
+              required={true}
               name="password"
               className="input"
             />
@@ -109,6 +112,7 @@ const RegisterUser = (props) => {
             <input
               onChange={(e) => handleChange(e)}
               type="text"
+              required={true}
               name="passwordConfirmation"
               className="input"
             />
@@ -117,9 +121,12 @@ const RegisterUser = (props) => {
             {this.state.errors.passwordConfirmation}
           </small>} */}
         </div>
-        <button className='button is-success'>
-          Complete registration
+        <button className='button is-dark'>
+          <strong>Complete Registration</strong>
         </button>
+        <div>
+          <p>Already have an account?<a href={'/login'}> <strong>Click here to log in!</strong></a></p>
+        </div>
       </form>
     </div>
   </section>
