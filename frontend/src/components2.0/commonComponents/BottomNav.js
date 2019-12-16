@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const BottomNav = () => (
   // <nav className="navbar is-fixed-bottom">
   <div className="navbar has-background-white is-fixed-bottom">
-    <Link className="vaultlogo navbar-item" to="/"><img src='../images/currentImg/Logo/Vault-Logo-Black.jpg' ></img></Link>
+    <Link className="vaultlogo navbar-item" to="/"><img src='https://i.imgur.com/50ix33x.png' ></img></Link>
     <div className="container">
       <div className="navbar-brand">
       </div>
