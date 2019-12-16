@@ -8,6 +8,7 @@
     "axios": "^0.19.0",
     "bcrypt": "^3.0.7",
     "body-parser": "^1.19.0",
+    "build": "^0.1.4",
     "bulma": "^0.8.0",
     "chai": "^4.2.0",
     "express": "^4.17.1",
@@ -24,6 +25,7 @@
     "react-router-dom": "^5.1.2",
     "react-star-rating-component": "^1.4.1",
     "save-dev": "0.0.1-security",
+    "start": "^5.1.0",
     "styled-components": "^4.4.1",
     "supertest": "^4.0.2",
     "url-loader": "^3.0.0",
@@ -48,7 +50,9 @@
     "test": "mocha backend/test/**/*_spec.js --require backend/test/helper --recursive --exit",
     "seed": "node backend/db/clothingSeeds.js; node backend/db/commuSeeds.js; node backend/db/cultureSeeds.js; node backend/db/currentSeeds.js",
     "serve:back": "nodemon backend/app.js",
-    "serve:front": "webpack-dev-server --mode-development"
+    "serve:front": "webpack-dev-server --mode-development",
+    "build": "npm run seed; webpack -p",
+    "start": "node backend/app.js"
   },
   "repository": {
     "type": "git",

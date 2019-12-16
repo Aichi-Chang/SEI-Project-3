@@ -36,6 +36,7 @@ import BottomNav from './components2.0/commonComponents/BottomNav'
 import './style.css'
 
 
+
 const App = () => {
 
   // console.log(Auth.getToken())
@@ -68,6 +69,7 @@ const App = () => {
 
   </BrowserRouter>
 }
+
 
 
 
