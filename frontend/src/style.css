@@ -1,8 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Alata&display=swap');
+/* @import "tachyons"; */
 
-html {
-  font-family: 'Bebas Neue', cursive;
-
-}
 
 body {
   padding-bottom: 150px;
@@ -51,7 +49,7 @@ margin-bottom: 20px;
 }
 
 .hero {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Alata', sans-serif;
   height: 100vh;
 }
 
