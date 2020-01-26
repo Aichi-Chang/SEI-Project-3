@@ -4,7 +4,6 @@ const Community = require('../models/Community')
 // const User = require('../models/User')
 const commuData = require('./data/CommuData')
 
-
 mongoose.connect(
   dbURI,
   { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true },
@@ -13,7 +12,7 @@ mongoose.connect(
     // .then(() => User.create(userData))
     // .then(users => console.log(`${users.length} User Created!`))      
     Community.create(commuData)  
-      .then(current => console.log(`${current.length} Commu Article Created`))
+      .then(commu => console.log(`${commu.length} Commu Article Created`))
       .catch(err => console.log(err))
       .finally(() => mongoose.connection.close())
   }

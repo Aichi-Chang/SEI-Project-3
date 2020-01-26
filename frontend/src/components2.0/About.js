@@ -10,7 +10,7 @@ const About = () => {
       <div className="column is-one-quarter">
         <h2 className="titleTwo">Lucy Casey</h2>
         <a href='https://www.linkedin.com/in/lucy-casey-02b815114/'>
-          <img src='https://i.imgur.com/6csZRbR.jpg'/>
+          <img src='https://i.imgur.com/8Tsc9E1.jpg'/>
         </a>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet ac tortor ac gravida. Proin egestas a nisi non molestie. Integer quis ante magna. Donec vitae convallis turpis, eu posuere ante.</p>
       </div>
@@ -18,21 +18,21 @@ const About = () => {
       <div className="column is-one-quarter">
         <h2 className="titleTwo">Aichi Chang</h2>
         <a href='https://www.linkedin.com/in/aichi-chang-22311659/'>
-          <img src='https://i.imgur.com/eSqhdGU.jpg'/>
+          <img src='https://i.imgur.com/A52KGBv.jpg'/>
         </a>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet ac tortor ac gravida. Proin egestas a nisi non molestie. Integer quis ante magna. Donec vitae convallis turpis, eu posuere ante.</p>
       </div>
       <div className="column is-one-quarter">
         <h2 className="titleTwo">Soina Choudhury</h2>
         <a href='https://www.linkedin.com/in/sonia-choudhury-42b018bb/'>
-          <img src='https://i.imgur.com/8KSh90e.jpg'/>
+          <img src='https://i.imgur.com/Vc8v2Js.jpg'/>
         </a>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet ac tortor ac gravida. Proin egestas a nisi non molestie. Integer quis ante magna. Donec vitae convallis turpis, eu posuere ante.</p>
       </div>
       <div className="column is-one-quarter">
         <h2 className="titleTwo">Sarah Wood</h2>
         <a href='https://www.linkedin.com/in/sarah-wood-57b407168/'>
-          <img src='https://i.imgur.com/8KSh90e.jpg'/>
+          <img src='https://i.imgur.com/Vc8v2Js.jpg'/>
         </a>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet ac tortor ac gravida. Proin egestas a nisi non molestie. Integer quis ante magna. Donec vitae convallis turpis, eu posuere ante.</p>
       </div>
