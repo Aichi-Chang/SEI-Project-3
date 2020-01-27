@@ -1,14 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import Auth from './lib/auth'
-// import SideNav from './components/SideNav'
-// import Main from './components/Main'
-
-
 import Home from './components2.0/commonComponents/Home'
 import About from './components2.0/About'
+import NotFound from './components2.0/NotFound'
 //culture
 import CultureFilms from './components2.0/culture/cultureFilms'
 import CultureSingleFilms from './components2.0/culture/cultureSingleFilms'
@@ -34,7 +30,6 @@ import LoginUser from './components2.0/user/LogingUser'
 
 import BottomNav from './components2.0/commonComponents/BottomNav' 
 import './style.css'
-
 
 
 const App = () => {
@@ -64,12 +59,12 @@ const App = () => {
       <Route path="/about" component={About} />
       <Route path="/register" component={RegisterUser} />
       <Route path="/login" component={LoginUser} />
+      <Route exact path= '/not-found' component={NotFound} />    
     </Switch>
 
 
   </BrowserRouter>
 }
-
 
 
 
