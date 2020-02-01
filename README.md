@@ -7,10 +7,10 @@ The third project of the software engineering immersive course at GA London. The
 
 The vault is an online lifestyle magazine with four different themes: second-hand clothes swap, popular locations, hot topics, and editor-selected music album, films, and book recommendations. Users will be able to register to the site. On different pages, logged in users can leave comments under the articles. 
 
-Visit the site here - [The Vault](https://project-3-the-vault.herokuapp.com/), or you can also find the GitHub repo - [GitHub](https://github.com/Aichi-Chang/Project-3)
+Visit the site here - [The Vault](https://project-3-the-vault.herokuapp.com/), or you can also find the GitHub repo - [GitHub](https://github.com/Aichi-Chang/The-Vault)
 
 #### Preview
-![ezgif com-video-to-gif](https://media.giphy.com/media/U4XNOpYXfVvq8XFl62/source.mov)
+![ezgif com-video-to-gif](https://media.giphy.com/media/U4XNOpYXfVvq8XFl62/giphy.gif)
 
 
 
