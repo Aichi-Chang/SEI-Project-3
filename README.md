@@ -17,11 +17,11 @@ Visit the site here - [The Vault](https://project-3-the-vault.herokuapp.com/), o
 ### :rocket: Get Started ###
 
 * Clone or download the repo
-* `pipenv shell` to move into virtual environment
-* `npm install` and `pipenv install` to install dependencies
-* `python manage.py dumpdata project4 --output todos/fixtures.json --indent=2` to populate database
-* `npm run serve:backend` to run back end
-* `npm run serve:frontend` to run front end
+* `npm init`
+* Run `mongod --dbpath ~/data/db` if you are using MacOS Catalina. Otherwise run `mongod`
+* `npm run seed` for seeding
+* `npm run serve:back` to run back end
+* `npm run serve:front` to run front end
 
 
 ### 📝 Brief ###
