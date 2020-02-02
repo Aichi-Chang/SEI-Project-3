@@ -7,7 +7,7 @@ const cultureFFunc = require('./controllers/cultureFFunc')
 const cultureMFunc = require('./controllers/cultureMFunc')
 const currentFunc = require('./controllers/currentFunc')
 const userFunc = require('./controllers/userFunc')
-const likeFunc = require('./controllers/likeFunc')
+// const likeFunc = require('./controllers/likeFunc')
 
 const secureRoute = require('./lib/secureRoute')
 

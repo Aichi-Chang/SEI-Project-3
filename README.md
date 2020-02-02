@@ -119,7 +119,29 @@ function updateLikes(req, res) {
     .catch(err => console.log(err))
 }
 ```
-<img src='frontend/assets/Screenshot 2020-01-30 at 1.25.48 pm.png' width='50%'>
+<img src='frontend/assets/Screenshot 2020-02-02 at 11.51.01 am.png' width='50%'>
+
+- As the magazine has a second-hand clothing swap page, we allow user to ***POST***, ***PUT*** and ***DELETE*** their items on the clothing page. And other user will be able to leave comments below for a swap.
+```js
+// ************************ clothing ************************
+router.route('/clothing')
+  .get(clothingFunc.index)
+  .post(secureRoute, clothingFunc.create)
+
+router.route('/clothing/:id')
+  .get(clothingFunc.show)
+  .put(secureRoute, clothingFunc.update)
+  .delete(secureRoute, clothingFunc.remove)
+
+router.route('/clothing/:id/comments')
+  .post(secureRoute, clothingFunc.createComment)
+
+router.route('/clothing/:id/comments/:commentId')
+  .delete(secureRoute, clothingFunc.removeComment)
+
+
+```
+
 
 
 #### Front end
