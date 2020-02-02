@@ -119,6 +119,7 @@ function updateLikes(req, res) {
     .catch(err => console.log(err))
 }
 ```
+<img src='frontend/assets/Screenshot 2020-01-30 at 1.25.48 pm.png' width='50%'>
 
 
 #### Front end
