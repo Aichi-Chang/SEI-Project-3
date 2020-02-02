@@ -59,16 +59,66 @@ Visit the site here - [The Vault](https://project-3-the-vault.herokuapp.com/), o
 
 | Time      | Tasks         |
 | ------------- |-------------|
-| **1 day**    |  Ideas research, Team brief, planning project days   |
-| **2  days**     |  Backend Initial set up, seeding completed  |
+| **1 day**    |  Ideas research, team brief, planning project days   |
+| **2  days**     |  Backend initial set up, seeding completed  |
 | **2 days**  | Frontend set up,  backend feature adjust    |
-| **1 day**  | Styling and Troubleshooting With Instructor   |
+| **1 day**  | Styling and troubleshooting with instructor   |
 | **1 day** | Bug fixing, final polishing  |
 | **1/2 day** | Deployment     |
 
-
 #### Back end
+- As we have four theme for our app and they all require deifferent schema, so we set up several different models plus one user model in our back-end.
+- For the users, we have add the likes field, so we will be able to retrieve the articles liked by user.
+```js
+const userSchema = new mongoose.Schema({ 
+  username: { type: String, required: true, unique: true }, 
+  email: { type: String, required: true },
+  password: { type: String, required: true  }, 
+  likes: [{ type: mongoose.Schema.ObjectId, ref: 'users' }]
+}, {
+  timestamps: true, 
+  toJSON: { 
+    transform(doc, json) {
+      return { 
+        username: json.username,
+        id: json._id,
+        likes: json.likes 
+      }
+    }
+  }
+})
+```
 
+- In user function, we have also created ***GET*** and ***PUT*** function for users' saved articles.
+```js
+// find user liked articles
+function retrieveLikes(req, res) {
+  User
+    .findOne({ _id: req.params.userId })
+    .then(user => {
+      if (!user) res.status(404).json({ message: 'User Not Found' })
+      return res.status(200).json(user)
+    })
+    .catch(err => console.log(err))
+}
+
+
+// edit user liked articles
+function updateLikes(req, res) {
+  req.body.user = req.currentUser
+  User
+    .findOne({ _id: req.params.userId })
+    .then(user => {
+      if (!user) res.status(404).json({ message: 'User Not Found' })
+      user.likes.push(req.body)
+      
+      res.status(201).json(user)
+      return user.save()
+    })
+    
+    .catch(err => console.log(err))
+}
+```
 
 
 #### Front end
@@ -76,6 +126,8 @@ Visit the site here - [The Vault](https://project-3-the-vault.herokuapp.com/), o
 
 
 ### 🤗 Wins ###
+
+
 
 
 ### 🧐 Chanllenges ###
