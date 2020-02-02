@@ -5,7 +5,7 @@
 
 The third project of the software engineering immersive course at GA London. The assignment was to create a **full-stack application**. This project was completed in a team of 4 within a week.
 
-The vault is an online lifestyle magazine with four different themes: second-hand clothes swap, popular locations, hot topics, and editor-selected music album, films, and book recommendations. Users will be able to register to the site. On different pages, logged in users can leave or delete comments under the articles. 
+The vault is an online lifestyle magazine with four different themes: second-hand clothing swap, popular locations, hot topics, and editor-selected music album, films, and book recommendations. Users will be able to register to the site. On different pages, logged in users can leave or delete comments under the articles. 
 
 Visit the site here - [The Vault](https://project-3-the-vault.herokuapp.com/), or you can also find the GitHub repo - [GitHub](https://github.com/Aichi-Chang/The-Vault)
 
@@ -139,12 +139,11 @@ router.route('/clothing/:id/comments')
 router.route('/clothing/:id/comments/:commentId')
   .delete(secureRoute, clothingFunc.removeComment)
 
-
 ```
 
-
-
 #### Front end
+
+- 
 
 
 
