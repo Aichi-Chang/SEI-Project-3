@@ -168,6 +168,7 @@ export default UseAxios
 - I wrote the comment feature for the project. As we have several pages require this feature, I have pulled the comment form itself out to a common component, but pass a props ***updateData*** back to setData, so once user left a comment, it will push to our single article's comment array and get rendered.
 
 *** single article component ***
+
 The initial state
 ```js
 const [data, setData] = useState( { comments: [] })
@@ -197,6 +198,7 @@ All comment will get rendered here
 ```
 
 *** comment form component ***
+
 The initial state
 ```js
 const CommentForm = ({ url, updateData, data }) => {
@@ -221,29 +223,7 @@ submit the form to our back-end, pass back the newData with comments and set for
       .catch(err => setErrors({ ...err, errors: err.data }))
   }
 ```
-The isAuthenticated() function will will get user's token and check if it's valid.
-Non logged in users will be able to see others comments, but not be able to leave any comment.
-```js
-return (
-    <div>
-      {Auth.isAuthenticated() && <h6>Hi {`${Auth.getUser().username}`}, what's on your mind?</h6>}
-      {Auth.isAuthenticated() && <form onSubmit={(e) => handleSubmit(e)}>
-        <textarea
-          onChange={(e) => handleChange(e)}
-          className="name-bar form-control"
-          placeholder="Your Comment"
-          value={formData}
-          name="content"
-          rows="5"
-        /><br></br>
-        <button className="comment-bar">
-          Send Comment
-        </button>
-      </form>}
-    </div>
-  )
-}
-```
+
 
 
 
