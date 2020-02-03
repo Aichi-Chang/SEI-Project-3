@@ -207,14 +207,16 @@ submit the form to our back-end, pass back the newData with comments and set for
 ```
 
 
-
-
 ### 🤗 Wins ###
 
-
-
+- Most back-end features are completed. After testing it on Insomnia, we can bascally get all the correct data coming back from our API. 
+- The comment feature is running well but still need some style.
+- As the person created the main repository on Github, I also help other teammates for their git issues. eg. merge branches, conflits, git push...
+<img src='https://github.com/Aichi-Chang/The-Vault/blob/master/frontend/assets/Image%20from%20iOS%20(1).jpg?raw=true' width='50%'>
 
 ### 🧐 Chanllenges ###
+
+- We were in a team of 
 
 
 
