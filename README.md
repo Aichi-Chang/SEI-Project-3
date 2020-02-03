@@ -144,24 +144,6 @@ router.route('/clothing/:id/comments/:commentId')
 #### Front end
 
 - For this project, we have used React Hooks. It makes the code cleaner and easier to read. 
-```js
-import { useEffect, useState } from 'react'
-import axios from 'axios'
-
-
-const UseAxios = (url, initialState = []) => {
-  const [data, setData] = useState(initialState)
-
-  useEffect(() => {
-    axios.get(url)
-      .then(res => setData(res.data))
-    return () => console.log('Route Changed')
-  }, [])
-  return data
-  
-}
-export default UseAxios
-```
 
 - We used the Uber's React Map GL package for Mapbox for our community page, it has the popup function so user will be able to check the information quickly.
 
