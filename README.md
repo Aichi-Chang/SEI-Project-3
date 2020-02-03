@@ -3,7 +3,7 @@
 
 ### 🚩 Project-3 - The Vault (Group) ###
 
-The third project of the software engineering immersive course at GA London. The assignment was to create a **full-stack application**. This project was completed in a team of 4 within a week.
+The third project of the software engineering immersive course at GA London. The assignment was to create a **full-stack application**. This project was completed in a team of 4 within a week. But 2 of the team members left the team halfway due to bad flu.
 
 The vault is an online lifestyle magazine with four different themes: second-hand clothing swap, popular locations, hot topics, and editor-selected music album, films, and book recommendations. Users will be able to register to the site. On different pages, logged in users can leave or delete comments under the articles. 
 
@@ -67,8 +67,8 @@ Visit the site here - [The Vault](https://project-3-the-vault.herokuapp.com/), o
 | **1/2 day** | Deployment     |
 
 #### Back end
-- As we have four theme for our app and they all require deifferent schema, so we set up several different models plus one user model in our back-end.
-- For the users, we have add the likes field, so we will be able to retrieve the articles liked by user.
+- As we have four themes for our app and they all require a different schema, so we set up several different models plus one user model in our back-end.
+- For the users, we have added the likes field, so we will be able to retrieve the articles liked by the user.
 ```js
 const userSchema = new mongoose.Schema({ 
   username: { type: String, required: true, unique: true }, 
@@ -121,7 +121,8 @@ function updateLikes(req, res) {
 ```
 <img src='frontend/assets/Screenshot 2020-02-02 at 11.51.01 am.png' width='50%'>
 
-- As the magazine has a second-hand clothing swap page, we allow user to ***POST***, ***PUT*** and ***DELETE*** their items on the clothing page. And other user will be able to leave comments below for a swap.
+- As the magazine has a second-hand clothing swap page, we allow the user to ***POST***, ***PUT*** and ***DELETE*** their items on the clothing page. And other users will be able to leave comments below for a swap.
+
 ```js
 // ************************ clothing ************************
 router.route('/clothing')
@@ -145,9 +146,9 @@ router.route('/clothing/:id/comments/:commentId')
 
 - For this project, we have used React Hooks. It makes the code cleaner and easier to read. 
 
-- We used the Uber's React Map GL package for Mapbox for our community page, it has the popup function so user will be able to check the information quickly.
+- We used the Uber's React Map GL package for Mapbox for our community page, it has the popup function so the user will be able to check the information quickly.
 
-- I wrote the comment feature for the project. As we have several pages require this feature, I have pulled the comment form itself out to a common component, but pass a props ***updateData*** back to setData, so once user left a comment, it will push to our single article's comment array and get rendered.
+- I wrote the comment feature for the project. As we have several pages require this feature, I have pulled the comment form itself out to a common component, but pass props ***updateData*** back to setData, so once the user left a comment, it will push to our single article's comment array and get rendered.
 
 ***single article component***
 
@@ -209,15 +210,16 @@ submit the form to our back-end, pass back the newData with comments and set for
 
 ### 🤗 Wins ###
 
-- Most back-end features are completed. After testing it on Insomnia, we can bascally get all the correct data coming back from our API. 
-- The comment feature is running well but still need some style.
-- As the person created the main repository on Github, I also help other teammates for their git issues. eg. merge branches, conflits, git push...
+- Most back-end features are completed. After testing it on Insomnia, we can basically get all the correct data coming back from our API. 
+- The comment feature is running well but still needs some style.
+- As the person creating the main repository on Github, I also help other teammates for their git issues. eg. merge branches, conflicts, git push...
 <img src='https://github.com/Aichi-Chang/The-Vault/blob/master/frontend/assets/Image%20from%20iOS%20(1).jpg?raw=true' width='50%'>
+- Team morning stand up brief is very important, we get to know what others have completed so far, the remaining tasks on the project plan or if anyone needs extra help on the feature they are building. 
 
 ### 🧐 Chanllenges ###
-
-- We were in a team of 
-
+- We were actually in a team of four, but two of our teammates caught bad cold halfway of this project, and one did not come back to the team. It was challenging for the rest of us to complete it before the deadline. But we managed it!
+- I have added the user liked feature into our back-end. In the beginning, I tried to implement user id into all article schemas, when we test a single article route in Insomnia, it showed all the users who have liked it. Everything works fine until I started to build the route for user dashboard. In order for users to see all the articles they liked, I should have implemented the article id into user schema. 
+- As we have different pages require the comment feature, we had to figure out to re-render the page with new comments and yet keep the initial state. After troubleshooting with the instructor, I learned how to pass props and use them to set data, simple and efficient.
 
 
 ### 🔮 Potential future features ###
