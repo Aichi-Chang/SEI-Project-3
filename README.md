@@ -143,7 +143,107 @@ router.route('/clothing/:id/comments/:commentId')
 
 #### Front end
 
-- 
+- For this project, we have used React Hooks. It makes the code cleaner and easier to read. 
+```js
+import { useEffect, useState } from 'react'
+import axios from 'axios'
+
+
+const UseAxios = (url, initialState = []) => {
+  const [data, setData] = useState(initialState)
+
+  useEffect(() => {
+    axios.get(url)
+      .then(res => setData(res.data))
+    return () => console.log('Route Changed')
+  }, [])
+  return data
+  
+}
+export default UseAxios
+```
+
+- We used the Uber's React Map GL package for Mapbox for our community page, it has the popup function so user will be able to check the information quickly.
+
+- I wrote the comment feature for the project. As we have several pages require this feature, I have pulled the comment form itself out to a common component, but pass a props ***updateData*** back to setData, so once user left a comment, it will push to our single article's comment array and get rendered.
+
+*** single article component ***
+The initial state
+```js
+const [data, setData] = useState( { comments: [] })
+```
+The original data remains the same, but the updateData will set the comments into our data
+```js
+  <CommentForm 
+    url={`/api/clothing/${props.match.params.id}/comments`}
+    updateData={setData}
+    data={data}
+  />
+```
+All comment will get rendered here
+``` js
+  <div className='columns'>
+    <div className='column'>
+      {data.comments.map((comment) => 
+        <div className="is-half" 
+          key={comment._id} > 
+          <div>{comment.content}</div>
+          <br />
+          <button className="delete" id={comment._id} onClick={(e) => handleDelete(e)}></button> 
+        </div>
+      )}
+    </div>
+  </div> 
+```
+
+*** comment form component ***
+The initial state
+```js
+const CommentForm = ({ url, updateData, data }) => {
+  const [formData, setFormData] = useState('')
+  const [errors, setErrors] = useState({
+    errors: []
+  })
+```
+submit the form to our back-end, pass back the newData with comments and set form content to none.
+```js
+  function handleSubmit(e) {
+    e.preventDefault()
+    axios.post( url , { content: formData }, {
+      headers: { Authorization: `Bearer ${Auth.getToken()}` }
+    })
+      .then(response => {
+        const newData = { ...data }
+        newData.comments = response.data 
+        updateData(newData)
+        setFormData('')
+      })
+      .catch(err => setErrors({ ...err, errors: err.data }))
+  }
+```
+The isAuthenticated() function will will get user's token and check if it's valid.
+Non logged in users will be able to see others comments, but not be able to leave any comment.
+```js
+return (
+    <div>
+      {Auth.isAuthenticated() && <h6>Hi {`${Auth.getUser().username}`}, what's on your mind?</h6>}
+      {Auth.isAuthenticated() && <form onSubmit={(e) => handleSubmit(e)}>
+        <textarea
+          onChange={(e) => handleChange(e)}
+          className="name-bar form-control"
+          placeholder="Your Comment"
+          value={formData}
+          name="content"
+          rows="5"
+        /><br></br>
+        <button className="comment-bar">
+          Send Comment
+        </button>
+      </form>}
+    </div>
+  )
+}
+```
 
 
 
@@ -158,7 +258,8 @@ router.route('/clothing/:id/comments/:commentId')
 
 ### 🔮 Potential future features ###
 
-- Add like function 
-- User dashboard showing saved(liked) articles
-- The front-end user interface for users to post second-hend clothing
+- Add like function (front-end)
+- Create user dashboard showing saved(liked) articles (front-end)
+- User can post and edit their second-hend clothing (front-end)
+- Rating (back-end)
 

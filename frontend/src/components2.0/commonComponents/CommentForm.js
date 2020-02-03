@@ -10,13 +10,6 @@ const CommentForm = ({ url, updateData, data }) => {
     errors: []
   })
 
-  // function getcomment(){
-  //   axios.get(comment)
-  //   .then((response)=>setFormData(response))
-  // }
-
-  // useEffect(getcomment, [])
-
   function handleChange(e) {
     setFormData(e.target.value)
     setErrors({ ...errors, errors: '' })
@@ -32,7 +25,6 @@ const CommentForm = ({ url, updateData, data }) => {
         newData.comments = response.data 
         updateData(newData)
         setFormData('')
-        // getcomment()
       })
       .catch(err => setErrors({ ...err, errors: err.data }))
   }
