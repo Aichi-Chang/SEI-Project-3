@@ -223,7 +223,7 @@ submit the form to our back-end, pass back the newData with comments and set for
 - As we have different pages require the comment feature, we had to figure out to re-render the page with new comments and yet keep the initial state. After troubleshooting with the instructor, I learned how to pass props and use them to set data, simple and efficient.
 
 
-### 🔮 Potential future features ###
+### 🔮 Future features ###
 
 - Add like function (front-end)
 - Create user dashboard showing saved(liked) articles (front-end)
