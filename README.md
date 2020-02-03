@@ -167,7 +167,7 @@ export default UseAxios
 
 - I wrote the comment feature for the project. As we have several pages require this feature, I have pulled the comment form itself out to a common component, but pass a props ***updateData*** back to setData, so once user left a comment, it will push to our single article's comment array and get rendered.
 
-*** single article component ***
+***single article component***
 
 The initial state
 ```js
@@ -197,7 +197,7 @@ All comment will get rendered here
   </div> 
 ```
 
-*** comment form component ***
+***comment form component***
 
 The initial state
 ```js
