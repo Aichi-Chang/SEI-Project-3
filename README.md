@@ -3,7 +3,7 @@
 
 ### 🚩 Project-3 - The Vault (Group) ###
 
-The third project of the software engineering immersive course at GA London. The assignment was to create a **full-stack application**. This project was completed in a team of 4 within a week. But 2 of the team members left the team halfway due to bad cold.
+The third project of the software engineering immersive course at GA London. The assignment was to create a **full-stack application**. This project was completed in a team of 4 within a week. But 2 of the team members left the team halfway due to bad cold, and one did not come back to the team before the deadline.
 
 The vault is an online lifestyle magazine with four different themes: second-hand clothing swap, popular locations, hot topics, and editor-selected music album, films, and book recommendations. Users will be able to register to the site. On different pages, logged in users can leave or delete comments under the articles. 
 
