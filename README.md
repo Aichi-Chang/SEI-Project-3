@@ -3,7 +3,7 @@
 
 ### 🚩 Project-3 - The Vault (Group) ###
 
-The third project of the software engineering immersive course at GA London. The assignment was to create a **full-stack application**. This project was completed in a team of 4 within a week. But 2 of the team members left the team halfway due to bad cold, and one did not come back to the team before the deadline.
+The third project of the software engineering immersive course at GA London. The assignment was to create a **full-stack application**. This project was completed in a team of 2 within a week. 
 
 The vault is an online lifestyle magazine with four different themes: second-hand clothing swap, popular locations, hot topics, and editor-selected music album, films, and book recommendations. Users will be able to register to the site. On different pages, logged in users can leave or delete comments under the articles. 
 
@@ -226,7 +226,6 @@ submit the form to our back-end, pass back the newData with comments and set for
 - Team morning stand up brief is very important, we get to know what others have completed so far, the remaining tasks on the project plan or if anyone needs extra help on the feature they are building. 
 
 ### 🧐 Chanllenges ###
-- We were in a team of four, but two of our teammates caught a bad cold halfway of this project, and one did not come back to the team before the deadline. It was challenging for the rest of us to complete it on time. But we managed it!
 - I have added the user liked feature into our back-end. In the beginning, I tried to implement user id into all article schemas, when we test a single article route in Insomnia, it showed all the users who have liked it. Everything works fine until I started to build the route for the user dashboard. In order for users to see all the articles they liked, I should have implemented the article id into user schema. 
 - As we have different pages require the comment feature, we had to figure out to re-render the page with new comments and yet keep the initial state. After troubleshooting with the instructor, I learned how to pass props and use them to set data, simple and efficient.
 
