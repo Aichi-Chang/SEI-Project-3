@@ -25,7 +25,7 @@ Visit the site here - [The Vault 2.O](https://project-3-2point0.herokuapp.com/),
 ### :rocket: Get Started ###
 
 * Clone or download the repo
-* `npm init`
+* `npm install`
 * Run `mongod --dbpath ~/data/db` if you are using MacOS Catalina. Otherwise run `mongod`
 * `npm run seed` for seeding
 * `npm run serve:back` to run back-end
